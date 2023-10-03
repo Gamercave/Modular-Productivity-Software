@@ -1,4 +1,9 @@
 # Project Overview
+## What is the Project
+The project is an open source productivity suite designed to be modular and accessible for as many individuals as possible with customisability being at its core
+
+## Ethos
+
 
 # Project Deliverable
 
