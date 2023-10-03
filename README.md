@@ -1,6 +1,6 @@
 # Project Overview
 ## What is the Project
-The project is an open source productivity suite designed to be modular and accessible for as many individuals as possible with customisability being at its core. It has been produced as a part of coursework but i hope to maintain it after the fact, both to work as a protfolio but also because i believe a system like this is needed
+The project is an open source productivity suite designed to be modular and accessible for as many individuals as possible with customisability being at its core.
 
 ## Ethos
 
@@ -12,7 +12,11 @@ The deliverable for this project comes in three parts
 - The Documentation
 
 ## The Report
-This report will contain a documentation of development including decisions made, struggles faced.
+This report will contain a documentation of development including:
+- decisions made
+- Research
+- struggles faced
+over the course of development this should allow a developer to understand the decisions ive made and why 
 
 ## The Software
 The software by April should contain:
