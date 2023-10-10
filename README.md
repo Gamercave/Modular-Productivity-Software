@@ -1,23 +1,12 @@
 # Project Overview
 ## What is the Project
-The project is an open source productivity suite designed to be *Modular and accessible* for as many individuals as possible with customisability being at its core.
-The softwares main purpose is to produce a UI framework which allows for customisability of all elements within a given Module a module in this sence would be a functionality e.g. a word processor, mp3 player etc, this will include button size, colour e.t.c with the aim of increasing Accssessability for all users. 
-
-
-## Ethos
-
-
+The softwares main purpose is to produce a open source UI framework which allows for customisability of all elements within a given Module - a module in this sence would be a functionality e.g. a word processor, mp3 player etc - this will include button size, colour e.t.c. The aim being increasing Accssessability for all users. 
+# The Report
+The report produced will explain my research and the problem space. I will then take an anylitical look into my development process reviewing decisions i have made discussing the flaws and strengths of the project, which will allow me to continue to develop post submission.
 # Project Deliverable
 The deliverable for this project comes in three parts
-- The Report
 - The Software
 - The Documentation
-
-## The Report
-This report will contain a documentation of development including:
-- decisions made
-- Research
-- struggles faced
 over the course of development this should allow a developer to understand the decisions ive made and why 
 
 ## The Software
@@ -28,10 +17,13 @@ The software by April should contain:
 - The beginings of another Module
 
 ## The Documentation
-As this is an open source project the quality of documentation is a large part of the deliverable, the goal here is to be able to provide documetnation to not only use the system but also to create new modules that the user might desire 
+As this is an open source project the quality of documentation is a large part of the deliverable. The goal being to provide useful documentation to both the user and any developers which wish to add on modules .
 
 # What is interesting & useful about this project?
-mass market productivity software in general have not undergone a wide redisign since the 90s and are laregley focussed on compatabilty, beyond this there accessability is limmited and usaully burried in menues, the goal of this project is to redesign and consolidate productivity suites into one simple easy to use aplication that is open source to allow for wide adoption and customisation 
+a large amount of the current productivity suite options contain limmited accessibility functionality, with accsess to them being relativly awkward due to the fact that it is usually hidden in a menu somewhere. this leads to a large amount of individuals time being spent trying to find sthe software/feature to solve their needs, e.g a good screen reader, changing background colour etc
+
+
+mass market productivity software in general have not undergone a wide redisign since the 90s and are laregley focussed on backwards-compatabilty, beyond this the problem space has limmited accessability functionality, which is usaully burried in menues.
 
 # Project Timetable:
 
