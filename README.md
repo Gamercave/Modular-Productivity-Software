@@ -27,7 +27,8 @@ a large amount of the current productivity suite options contain limmited access
 > this is a large element of phase 1 as the problem space is diverse and research avaliblity is low  
 - producing solid initial requirements
 - some simple UML class diagrams
-- Writing the start of the report focussed on research aproach and methodologies
+- Setting Methodologies & tests
+- Writing as much of the report as possible
 - Producing a summary to help with stage 2
 ## Phase 2 Deadline: end of Febuary + - 2 weeks
 - Reflection on stage 1
@@ -35,13 +36,23 @@ a large amount of the current productivity suite options contain limmited access
 - Unit testing
 - Start to write the development section of the report laregely focussed on development methodology and problems faced so far
 - Module testing
+- Summarise for phase 2.5
+## Phase 2.5 Deadline: Mid Feb
+> the seperation here is due to the diffrence in aims, there is laregley development tasks and organisation tasks split here, this is due to the fact it allows for a time to gather thoughts and prioritise 
+- Refelct on phase 2 
+- Produce Documentation
 - Organising artifacts
 - Producing refence table
 - Producing Summary to aid with phase 3
-## Phase 3 - Recurring - with submission occuring 22nd April
-- Reflection on phase 2
-- Production of a single Module
+## Phase 3 - with submission occuring 22nd April -
+- Reflection on phase 2.5
+- Systems testing
 - Finalising report
-- System Testing
+- Summarising for phase 4
+## Phase 4 Reccuring
+- Reflection on previous Stage
+- Development of module
+- Produce Documentation
+- Summarise Stage
 
 # [Click here for futher support](https://github.com/Gamercave/Modular-Productivity-Software/wiki)
