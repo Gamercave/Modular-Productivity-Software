@@ -7,8 +7,6 @@ The report produced will explain my research and the problem space. I will then 
 The deliverable for this project comes in three parts
 - The Software
 - The Documentation
-over the course of development this should allow a developer to understand the decisions ive made and why 
-
 ## The Software
 The software by April should contain:
 - a modularity system which allows for multiple aplications and/or utilities to be displayed on the screen at a single time
@@ -20,11 +18,30 @@ The software by April should contain:
 As this is an open source project the quality of documentation is a large part of the deliverable. The goal being to provide useful documentation to both the user and any developers which wish to add on modules .
 
 # What is interesting & useful about this project?
-a large amount of the current productivity suite options contain limmited accessibility functionality, with accsess to them being relativly awkward due to the fact that it is usually hidden in a menu somewhere. this leads to a large amount of individuals time being spent trying to find sthe software/feature to solve their needs, e.g a good screen reader, changing background colour etc
-
-
-mass market productivity software in general have not undergone a wide redisign since the 90s and are laregley focussed on backwards-compatabilty, beyond this the problem space has limmited accessability functionality, which is usaully burried in menues.
+a large amount of the current productivity suite options contain limmited accessibility functionality, with accsess to them being poor as they are usually hidden in a menu. This leads to a large amount of individuals time being spent trying to find the software/feature to solve their needs, e.g a good screen reader, changing background colour etc. The aim of the software is to solve this problem unilatirally whilst also providing a good framework solve future problems in the space
 
 # Project Timetable:
+## Phase 1 Deadline: end of November + - 2 weeks
+- Research into the problem space
+- Submit any necisary ethics aplications and where possible preform the research method
+> this is a large element of phase 1 as the problem space is diverse and research avaliblity is low  
+- producing solid initial requirements
+- some simple UML class diagrams
+- Writing the start of the report focussed on research aproach and methodologies
+- Producing a summary to help with stage 2
+## Phase 2 Deadline: end of Febuary + - 2 weeks
+- Reflection on stage 1
+- development of the UI framework & Word Processor
+- Unit testing
+- Start to write the development section of the report laregely focussed on development methodology and problems faced so far
+- Module testing
+- Organising artifacts
+- Producing refence table
+- Producing Summary to aid with phase 3
+## Phase 3 - Recurring - with submission occuring 22nd April
+- Reflection on phase 2
+- Production of a single Module
+- Finalising report
+- System Testing
 
 # [Click here for futher support](https://github.com/Gamercave/Modular-Productivity-Software/wiki)
