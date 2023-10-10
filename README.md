@@ -1,6 +1,8 @@
 # Project Overview
 ## What is the Project
-The project is an open source productivity suite designed to be modular and accessible for as many individuals as possible with customisability being at its core.
+The project is an open source productivity suite designed to be *Modular and accessible* for as many individuals as possible with customisability being at its core.
+The softwares main purpose is to produce a UI framework which allows for customisability of all elements within a given Module a module in this sence would be a functionality e.g. a word processor, mp3 player etc, this will include button size, colour e.t.c with the aim of increasing Accssessability for all users. 
+
 
 ## Ethos
 
