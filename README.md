@@ -37,7 +37,7 @@ a large amount of the current productivity suite options contain limmited access
 - Start to write the development section of the report laregely focussed on development methodology and problems faced so far
 - Module testing
 - Summarise for phase 2.5
-## Phase 2.5 Deadline: Mid Feb
+## Phase 2.5 Deadline: Mid march  +- 1 week
 > the seperation here is due to the diffrence in aims, there is laregley development tasks and organisation tasks split here, this is due to the fact it allows for a time to gather thoughts and prioritise 
 - Refelct on phase 2 
 - Produce Documentation
@@ -48,10 +48,11 @@ a large amount of the current productivity suite options contain limmited access
 - Reflection on phase 2.5
 - Systems testing
 - Finalising report
+## Post Submission
 - Summarising for phase 4
-## Phase 4 Reccuring
+### Phase 4 Reccuring
 - Reflection on previous Stage
-- Development of module
+- adding or improving functionality 
 - Produce Documentation
 - Summarise Stage
 
