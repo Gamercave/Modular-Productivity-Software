@@ -44,7 +44,7 @@ a large amount of the current productivity suite options contain limmited access
 - Organising artifacts
 - Producing refence table
 - Producing Summary to aid with phase 3
-## Phase 3 - with submission occuring 22nd April -
+## Phase 3 - Deadline 15th April +- 1 week
 - Reflection on phase 2.5
 - Systems testing
 - Finalising report
