@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f7fe1e3e-bfe5-4a5b-843f-a10ef07160a9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Core/IDHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Core/Module.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="f7fe1e3e-bfe5-4a5b-843f-a10ef07160a9" name="Changes" comment="Code done today - tidied a bit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/IDHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/IDHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/Module.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Module.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -74,12 +71,27 @@
       <updated>1696324375802</updated>
       <workItem from="1696324376831" duration="1000" />
       <workItem from="1699952726820" duration="7139000" />
-      <workItem from="1699969569958" duration="3531000" />
+      <workItem from="1699969569958" duration="3641000" />
+      <workItem from="1700132122467" duration="2150000" />
     </task>
+    <task id="LOCAL-00001" summary="Code done yesterday mainly focussed on testing how to make unieque IDs very rough">
+      <option name="closed" value="true" />
+      <created>1700122185022</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1700122185022</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Code done yesterday mainly focussed on testing how to make unieque IDs very rough" />
+    <MESSAGE value="Code done today - tidied a bit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Code done today - tidied a bit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -92,11 +104,6 @@
           <url>file://$PROJECT_DIR$/out/production/HelloWorld/Main.class</url>
           <line>51</line>
           <option name="timeStamp" value="38" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>50</line>
-          <option name="timeStamp" value="39" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

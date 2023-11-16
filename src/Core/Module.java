@@ -4,9 +4,9 @@ import java.util.HashMap;
 
 
 public class Module {
-    private String moduleID;
+    private final String moduleID;
 
-    private Module parentModule;
+    private final Module parentModule;
     private HashMap<String,Module> childModules;
     private float width;
     private float height;
@@ -15,15 +15,14 @@ public class Module {
 
     private String moduleTitle;
 
-    public Module(String parentModuleID){
+    public Module(Module parentModule){
         // you must set Core.Module Title
-        //this.parentModule = parentModule;
-        moduleID = IDHandler.getModuleID(parentModuleID);
-        //moduleID = IDHandler.getModuleID(parentModule.getModuleID());
-        childModules = new HashMap<String,Module>();
+        this.parentModule = parentModule;
+        moduleID = IDHandler.getModuleID(parentModule);
         // you must set width and height for your Core.Module
         xPos = 0;
         yPos = 0;
+        parentModule.addChildModule(this);
 
     }
         public boolean setChildren (HashMap<String, Module> modules) {
