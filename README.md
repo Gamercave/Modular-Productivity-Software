@@ -1,6 +1,6 @@
 # Project Overview
 ## What is the Project
-The softwares main purpose is to produce a open source UI framework which allows for customisability of all elements within a given Module - a module in this sence would be a functionality such as: a word processor, mp3 player etc in a widget style box that can be manipulated to: place controls and information anywhere, alter the contents of the module itself e.g Disabling word count or disabling playback bar in an MP3 player, and adjust apearence of individual information or controls in colour size etc - this will include button size, colour e.t.c. The aim being increasing Accssessability for all users. 
+The softwares main purpose is to produce a open source UI framework which allows for customisability of all elements within a given Core.Module - a module in this sence would be a functionality such as: a word processor, mp3 player etc in a widget style box that can be manipulated to: place controls and information anywhere, alter the contents of the module itself e.g Disabling word count or disabling playback bar in an MP3 player, and adjust apearence of individual information or controls in colour size etc - this will include button size, colour e.t.c. The aim being increasing Accssessability for all users. 
 # The Report
 The report produced will explain my research and the problem space. I will then take an anylitical look into my development process reviewing decisions i have made discussing the flaws and strengths of the project, which will allow me to continue to develop post submission.
 # Project Deliverable
@@ -12,7 +12,7 @@ The software by April should contain:
 - a modularity system which allows for multiple aplications and/or utilities to be displayed on the screen at a single time
 - Customisability: Every Aspect of a given module should be customisable from its back ground colour to display shape etc.
 - A Word Processor
-- The beginings of another Module
+- The beginings of another Core.Module
 
 ## The Documentation
 As this is an open source project the quality of documentation is a large part of the deliverable. The goal being to provide useful documentation to both the user and any developers which wish to add on modules .
@@ -35,7 +35,7 @@ a large amount of the current productivity suite options contain limmited access
 - development of the UI framework & Word Processor
 - Unit testing
 - Start to write the development section of the report laregely focussed on development methodology and problems faced so far
-- Module testing
+- Core.Module testing
 - Summarise for phase 2.5
 ## Phase 2.5 Deadline: Mid march  +- 1 week
 > the seperation here is due to the diffrence in aims, there is laregley development tasks and organisation tasks split here, this is due to the fact it allows for a time to gather thoughts and prioritise 
