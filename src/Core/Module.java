@@ -3,6 +3,7 @@ package Core;
 import java.util.HashMap;
 
 
+
 public class Module {
     private final String moduleID;
 
@@ -78,9 +79,21 @@ public class Module {
         public float getyPos () {
         return yPos;
     }
+public boolean delete(){
+    java.util.Set<String> keys = childModules.keySet();
+    for (String key:keys) {
+        childModules.get(key).delete();
+        parentModule.removeChildModule(moduleID);
+    }
+        //need to implement locational parent
+    return true;
+}
 
 public boolean clearModules(){
-            childModules = new HashMap<String, Module>();
+    java.util.Set<String> keys = childModules.keySet();
+    for (String key:keys) {
+        childModules.get(key).delete();
+    }
             return true;
             // needs implementing
 }
