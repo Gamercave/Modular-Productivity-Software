@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f7fe1e3e-bfe5-4a5b-843f-a10ef07160a9" name="Changes" comment="Code done today - tidied a bit">
+    <list default="true" id="f7fe1e3e-bfe5-4a5b-843f-a10ef07160a9" name="Changes" comment="implemented deleting of modules and calling delete function for every child module - this would have to be done as every module also needs to call to be deleted from its locational parent">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Core/Module.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Module.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +70,7 @@
       <workItem from="1699952726820" duration="7139000" />
       <workItem from="1699969569958" duration="3641000" />
       <workItem from="1700132122467" duration="3035000" />
-      <workItem from="1700567430789" duration="1577000" />
+      <workItem from="1700567430789" duration="2051000" />
     </task>
     <task id="LOCAL-00001" summary="Code done yesterday mainly focussed on testing how to make unieque IDs very rough">
       <option name="closed" value="true" />
@@ -89,7 +88,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700134350533</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="implemented deleting of modules and calling delete function for every child module - this would have to be done as every module also needs to call to be deleted from its locational parent">
+      <option name="closed" value="true" />
+      <created>1700569085240</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1700569085240</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -98,7 +105,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Code done yesterday mainly focussed on testing how to make unieque IDs very rough" />
     <MESSAGE value="Code done today - tidied a bit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Code done today - tidied a bit" />
+    <MESSAGE value="implemented deleting of modules and calling delete function for every child module - this would have to be done as every module also needs to call to be deleted from its locational parent" />
+    <option name="LAST_COMMIT_MESSAGE" value="implemented deleting of modules and calling delete function for every child module - this would have to be done as every module also needs to call to be deleted from its locational parent" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
