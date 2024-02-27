@@ -4,16 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f7fe1e3e-bfe5-4a5b-843f-a10ef07160a9" name="Changes" comment="implemented deleting of modules and calling delete function for every child module - this would have to be done as every module also needs to call to be deleted from its locational parent">
-      <change afterPath="$PROJECT_DIR$/qodana.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main/MPSModule.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/Resources/Module.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/GetModuleIDTestSteps.java" afterDir="false" />
+    <list default="true" id="f7fe1e3e-bfe5-4a5b-843f-a10ef07160a9" name="Changes" comment="Tests are now working">
+      <change afterPath="$PROJECT_DIR$/src/test/Resources/ModuleIDs.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelloWorld.iml" beforeDir="false" afterPath="$PROJECT_DIR$/HelloWorld.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Core/IDHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Core/Module.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/MPSModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/MPSModule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/Resources/Module.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/GetModuleIDTestSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/GetModuleIDTestSteps.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +28,20 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Gamercave"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="c2461efb-ff52-4d27-bab7-7405bf0c4d3b" />
+        <option name="url" value="https://github.com/Gamercave/Modular-Productivity-Software.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -97,7 +107,7 @@
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Feature: Module">
+  <component name="RunManager" selected="Cucumber Java.Feature: ModuleIDs">
     <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="HelloWorld" />
@@ -124,8 +134,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Feature: ModuleIDs" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/Resources/ModuleIDs.feature" />
+      <option name="GLUE" value="test.java" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="HelloWorld" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: ModuleIDs" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber Java.Feature: ModuleIDs" />
         <item itemvalue="Cucumber Java.Feature: Module" />
       </list>
     </recent_temporary>
@@ -143,7 +173,7 @@
       <workItem from="1699969569958" duration="3641000" />
       <workItem from="1700132122467" duration="3035000" />
       <workItem from="1700567430789" duration="2051000" />
-      <workItem from="1709029921948" duration="3189000" />
+      <workItem from="1709029921948" duration="5583000" />
     </task>
     <task id="LOCAL-00001" summary="Code done yesterday mainly focussed on testing how to make unieque IDs very rough">
       <option name="closed" value="true" />
@@ -169,17 +199,54 @@
       <option name="project" value="LOCAL" />
       <updated>1700569085240</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="implemented deleting of modules and calling delete function for every child module - this would have to be done as every module also needs to call to be deleted from its locational parent">
+      <option name="closed" value="true" />
+      <created>1709033155387</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1709033155387</updated>
+    </task>
+    <task id="LOCAL-00005" summary="First atempt at test">
+      <option name="closed" value="true" />
+      <created>1709033187474</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1709033187474</updated>
+    </task>
+    <task id="LOCAL-00006" summary="First atempt at test">
+      <option name="closed" value="true" />
+      <created>1709033318037</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1709033318037</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Code done yesterday mainly focussed on testing how to make unieque IDs very rough" />
     <MESSAGE value="Code done today - tidied a bit" />
     <MESSAGE value="implemented deleting of modules and calling delete function for every child module - this would have to be done as every module also needs to call to be deleted from its locational parent" />
-    <option name="LAST_COMMIT_MESSAGE" value="implemented deleting of modules and calling delete function for every child module - this would have to be done as every module also needs to call to be deleted from its locational parent" />
+    <MESSAGE value="First atempt at test" />
+    <MESSAGE value="Tests are now working" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tests are now working" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

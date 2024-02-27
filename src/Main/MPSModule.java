@@ -16,8 +16,13 @@ public class MPSModule {
     }
 
     private String addChild(MPSModule child) {
-        String childID = id + "," + children.size()+1;
+        String childID = getChildID();
         children.put(childID, child);
+        return childID;
+    }
+
+    private String getChildID() {
+        String childID = id + "," + (children.size()+1);
         return childID;
     }
 
@@ -25,7 +30,4 @@ public class MPSModule {
         return id;
     }
 
-    public Integer getChildCount() {
-        return children.size();
-    }
 }

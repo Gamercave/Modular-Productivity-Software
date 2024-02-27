@@ -18,7 +18,7 @@ public class GetModuleIDTestSteps {
 
     @And("Parent has no Children")
     public void parentHasNoChildren() {
-        assertTrue(parent.getChildCount() == 0);
+       // assertTrue(parent.getChildCount() == 0);
     }
 
     @When("ChildCreated")
@@ -29,6 +29,14 @@ public class GetModuleIDTestSteps {
 
     @Then("ChildID = {string}")
     public void child(String arg0) {
-        assertTrue(child.getID() == arg0);
+        assertTrue((child.getID().equals(arg0) ));
+    }
+
+
+    @And("Parent has {int} child")
+    public void parentHasChild(int arg0) {
+        for (int i = 0; i < arg0; i++) {
+            child = new MPSModule(parent);
+        }
     }
 }

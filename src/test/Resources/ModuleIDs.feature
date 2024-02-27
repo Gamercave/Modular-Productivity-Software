@@ -1,0 +1,24 @@
+Feature: getModuleID
+
+  Scenario: parent is root
+    Given parentID = "1"
+    And Parent has no Children
+    When ChildCreated
+    Then ChildID = "1,1"
+Scenario: parent is not root
+  Given parentID = "1,1"
+  And Parent has no Children
+  When ChildCreated
+  Then ChildID = "1,1,1"
+
+  Scenario: parent is not root and has a child
+    Given parentID = "1,1"
+    And Parent has 1 child
+    When ChildCreated
+    Then ChildID = "1,1,2"
+
+    Scenario: parent is root and has a child
+      Given parentID = "1"
+      And Parent has 5 child
+      When  ChildCreated
+      Then ChildID = "1,6"
