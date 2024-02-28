@@ -3,3 +3,15 @@ Feature: Modules have windows
     Given the user boots the aplication
     When the root module is created
     Then the module has a window positioned at x = 0 , y = 0
+
+    Scenario: a second module is added
+      Given A root module exists
+      When the user adds a module to the root module
+      Then the root module contains both the child module and window
+      Scenario: a second module is removed from a different module
+        Given A root module exists
+        And A second module is added to the root module
+        And A third module is added to the second module
+        When the Third module is moved from the second module to the third module
+      Then neither the third child nor its pane exist within the second module
+        And the third module and its pane exist in the first module;

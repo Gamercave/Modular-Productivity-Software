@@ -6,11 +6,12 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.assertEquals;
 
 public class GetModuleIDTestSteps {
     MPSModule parent;
     MPSModule child;
+
     @Given("parentID = {string}")
     public void parentid(String arg0) {
         parent = new MPSModule(arg0);
@@ -18,7 +19,7 @@ public class GetModuleIDTestSteps {
 
     @And("Parent has no Children")
     public void parentHasNoChildren() {
-       // assertTrue(parent.getChildCount() == 0);
+        assertEquals(0, parent.getChildCount());
     }
 
     @When("ChildCreated")
@@ -29,7 +30,7 @@ public class GetModuleIDTestSteps {
 
     @Then("ChildID = {string}")
     public void child(String arg0) {
-        assertTrue((child.getID().equals(arg0) ));
+        assertEquals(child.getID(), arg0);
     }
 
 
@@ -43,7 +44,7 @@ public class GetModuleIDTestSteps {
     @And("Parent has between {int} and {int} Children")
     public void parentHasBetweenAndChildren(int arg0, int arg1) {
         int count = arg0;
-        while (count<=arg1){
+        while (count <= arg1) {
             child = new MPSModule(parent);
             childidNumChildren(parent.getID() + ",");
             count++;
@@ -53,7 +54,7 @@ public class GetModuleIDTestSteps {
     @Then("ChildID = {string} Num Children")
     public void childidNumChildren(String arg0) {
         String childID = arg0 + parent.getNumChildren();
-        assertTrue(child.getID().equals(childID));
+        assertEquals(child.getID(), childID);
     }
 
 
