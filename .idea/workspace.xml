@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f7fe1e3e-bfe5-4a5b-843f-a10ef07160a9" name="Changes" comment="Jframe tests exist">
-      <change afterPath="$PROJECT_DIR$/src/Main/Root.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main/Root.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/WindowSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/MPSModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/MPSModule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/Resources/ModuleWindow.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/Resources/ModuleWindow.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/GetModuleIDTestSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/GetModuleIDTestSteps.java" afterDir="false" />
-    </list>
+    <list default="true" id="f7fe1e3e-bfe5-4a5b-843f-a10ef07160a9" name="Changes" comment="Jframe tests exist" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -110,7 +102,7 @@
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Feature: ModuleWindow">
+  <component name="RunManager" selected="Cucumber Java.Feature: ModuleIDs">
     <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="HelloWorld" />
@@ -176,8 +168,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber Java.Feature: ModuleWindow" />
         <item itemvalue="Cucumber Java.Feature: ModuleIDs" />
+        <item itemvalue="Cucumber Java.Feature: ModuleWindow" />
         <item itemvalue="Cucumber Java.Feature: Module" />
       </list>
     </recent_temporary>

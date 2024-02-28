@@ -9,6 +9,7 @@ public class Root {
 
 
     public Root(){
+         pane = new JPanel();
     }
     public void add(Root child){
         pane.add(child.getPane());
@@ -22,12 +23,12 @@ public class Root {
         return new Point(pane.getX(), pane.getY());
     }
 
-    public Boolean Contains(Root widnow) {
-        return Arrays.stream(pane.getComponents()).toList().contains(widnow.getPane());
+    public Boolean Contains(Root window) {
+        return Arrays.stream(pane.getComponents()).toList().contains(window.getPane());
 
     }
 
-    public void remove(Root widnow) {
-        pane.remove(widnow.getPane());
+    public void remove(Root window) {
+        pane.remove(window.getPane());
     }
 }

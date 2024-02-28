@@ -16,7 +16,7 @@ public class WindowSteps {
     MPSModule child;
     MPSModule child2;
 
-    @Given("the user boots the aplication")
+    @Given("the user boots the application")
     public void theUserBootsTheAplication() {
 
     }

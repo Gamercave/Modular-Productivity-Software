@@ -23,7 +23,7 @@ public class GetModuleIDTestSteps {
     }
 
     @When("ChildCreated")
-    public void childcreated() {
+    public void childCreated() {
         child = new MPSModule(parent);
     }
 
@@ -46,13 +46,13 @@ public class GetModuleIDTestSteps {
         int count = arg0;
         while (count <= arg1) {
             child = new MPSModule(parent);
-            childidNumChildren(parent.getID() + ",");
+            childIdNumChildren(parent.getID() + ",");
             count++;
         }
     }
 
     @Then("ChildID = {string} Num Children")
-    public void childidNumChildren(String arg0) {
+    public void childIdNumChildren(String arg0) {
         String childID = arg0 + parent.getNumChildren();
         assertEquals(child.getID(), childID);
     }
