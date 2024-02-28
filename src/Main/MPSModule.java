@@ -6,6 +6,8 @@ public class MPSModule {
     private final String id;
     private HashMap<String, MPSModule> children;
 
+
+
     public MPSModule(String id){// Only for use when creating root Module
         this.id = id;
         children = new HashMap<>();
@@ -13,6 +15,7 @@ public class MPSModule {
     public MPSModule(MPSModule parent){
         this.id = parent.addChild(this);
         children = new HashMap<>();
+
     }
 
     private String addChild(MPSModule child) {
@@ -28,6 +31,10 @@ public class MPSModule {
 
     public String getID() {
         return id;
+    }
+
+    public int getNumChildren() {
+        return children.size();
     }
 
 }

@@ -22,3 +22,9 @@ Scenario: parent is not root
       And Parent has 5 child
       When  ChildCreated
       Then ChildID = "1,6"
+
+      Scenario: parent is root and has a child
+        Given parentID = "1"
+        And Parent has between 1 and 100 Children
+        When ChildCreated
+        Then ChildID = "1," Num Children

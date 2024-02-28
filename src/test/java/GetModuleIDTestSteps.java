@@ -39,4 +39,22 @@ public class GetModuleIDTestSteps {
             child = new MPSModule(parent);
         }
     }
+
+    @And("Parent has between {int} and {int} Children")
+    public void parentHasBetweenAndChildren(int arg0, int arg1) {
+        int count = arg0;
+        while (count<=arg1){
+            child = new MPSModule(parent);
+            childidNumChildren(parent.getID() + ",");
+            count++;
+        }
+    }
+
+    @Then("ChildID = {string} Num Children")
+    public void childidNumChildren(String arg0) {
+        String childID = arg0 + parent.getNumChildren();
+        assertTrue(child.getID().equals(childID));
+    }
+
+
 }
