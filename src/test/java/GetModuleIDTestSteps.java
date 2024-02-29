@@ -10,6 +10,7 @@ import static org.junit.Assert.assertEquals;
 
 public class GetModuleIDTestSteps {
     MPSModule parent;
+    MPSModule secondParent;
     MPSModule child;
 
     @Given("parentID = {string}")
@@ -58,4 +59,14 @@ public class GetModuleIDTestSteps {
     }
 
 
+    @And("second parentID = {string}")
+    public void secondParentID(String arg0) {
+        secondParent = new MPSModule(arg0);
+
+    }
+
+    @When("Child Moves from one parent to another")
+    public void childMovesFromOneParentToAnother() {
+        child.move(parent, secondParent);
+    }
 }

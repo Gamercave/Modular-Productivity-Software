@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f7fe1e3e-bfe5-4a5b-843f-a10ef07160a9" name="Changes" comment="Jframe tests exist" />
+    <list default="true" id="f7fe1e3e-bfe5-4a5b-843f-a10ef07160a9" name="Changes" comment="Jframe tests exist">
+      <change beforePath="$PROJECT_DIR$/src/test/Resources/ModuleIDs.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/Resources/ModuleIDs.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/GetModuleIDTestSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/GetModuleIDTestSteps.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -75,15 +78,6 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="QodanaHighlightedReportService">
-    <option name="localRunNotPublishedPersistedInfo">
-      <LocalReportPersistedInfo>
-        <option name="path" value="/private/var/folders/yh/4spc8r615jlgzf5cs5ry5x5h0000gn/T/qodana_output1/qodana.sarif.json" />
-        <option name="reportGuid" value="a4f82ded-b34f-4387-92fe-1273c8d56d82" />
-        <option name="reportName" value="Modular-Productivity-Software/qodana/2024-02-27" />
-      </LocalReportPersistedInfo>
-    </option>
-  </component>
   <component name="QodanaIsSelectedPersistenceService">
     <option name="selectedOrLoading" value="true" />
   </component>
@@ -102,7 +96,7 @@
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Feature: ModuleIDs">
+  <component name="RunManager" selected="Cucumber Java.Feature: ModuleWindow">
     <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="HelloWorld" />
@@ -168,8 +162,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber Java.Feature: ModuleIDs" />
         <item itemvalue="Cucumber Java.Feature: ModuleWindow" />
+        <item itemvalue="Cucumber Java.Feature: ModuleIDs" />
         <item itemvalue="Cucumber Java.Feature: Module" />
       </list>
     </recent_temporary>
@@ -301,5 +295,10 @@
         <PinnedItemInfo parentTag="java.lang.String" memberName="value" />
       </pinned-members>
     </pin-to-top-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Modular_Productivity_Software$Feature__ModuleIDs.ic" NAME="Feature: ModuleIDs Coverage Results" MODIFIED="1709211596591" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>io.cucumber.core.cli.*</FILTER>
+    </SUITE>
   </component>
 </project>

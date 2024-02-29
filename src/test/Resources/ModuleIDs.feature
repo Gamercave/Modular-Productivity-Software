@@ -28,3 +28,11 @@ Scenario: parent is not root
         And Parent has between 1 and 100 Children
         When ChildCreated
         Then ChildID = "1," Num Children
+
+  Scenario: Module changes parent
+    Given parentID = "1"
+    And second parentID = "2"
+    And  ChildCreated
+    Then ChildID = "1,1"
+    When Child Moves from one parent to another
+    Then ChildID = "2,1"
