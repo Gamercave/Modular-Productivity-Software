@@ -6,12 +6,14 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
+import javax.swing.*;
 import java.awt.*;
 
 import static org.junit.Assert.*;
 
-public class WindowSteps {
 
+public class WindowSteps {
+JFrame jFrame;
     MPSModule root;
     MPSModule child;
     MPSModule child2;
@@ -72,5 +74,31 @@ public class WindowSteps {
     @And("the third module and its pane exist in the first module;")
     public void theThirdModuleAndItsPaneExistInTheFirstModule() {
         root.contains(child2);
+    }
+
+    @Given(": the UI designer contains a Button")
+    public void theUIDesignerContainsAButton() {
+    }
+
+    @When(": the UI is instantiated")
+    public void theUIIsInstantiated() {
+        jFrame = new JFrame();
+        root = new MPSModule("1");
+        jFrame.setContentPane(root.getWidnow().getPane());
+        jFrame.pack();
+    }
+
+    @Then("the UI should contain a button")
+    public void theUIShouldContainAButton() {
+      Component[] components = jFrame.getContentPane().getComponents();
+      boolean flag = false;
+        for (Component c: components)
+        {
+            if(c.getName().equals("testButton")){
+                flag = true;
+            }
+
+        }
+        assertTrue(flag);
     }
 }

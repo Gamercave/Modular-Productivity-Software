@@ -6,16 +6,18 @@ import java.util.Arrays;
 
 public class Root {
     private JPanel pane;
+    private JButton testButton;
 
 
     public Root(){
-         pane = new JPanel();
+    testButton.setName("testButton");
+    pane.setName("panex");
     }
     public void add(Root child){
         pane.add(child.getPane());
     }
 
-    private Component getPane() {
+    public Container getPane() {
         return pane;
     }
 
@@ -31,4 +33,6 @@ public class Root {
     public void remove(Root window) {
         pane.remove(window.getPane());
     }
+
+
 }

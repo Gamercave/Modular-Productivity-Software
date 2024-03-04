@@ -15,3 +15,8 @@ Feature: Modules have windows
         When the Third module is moved from the second module to the third module
       Then neither the third child nor its pane exist within the second module
         And the third module and its pane exist in the first module;
+
+        Scenario: a window is created using UI designer
+          Given : the UI designer contains a Button
+          When : the UI is instantiated
+          Then  the UI should contain a button
