@@ -90,7 +90,7 @@ JFrame jFrame;
 
     @Then("the UI should contain a button")
     public void theUIShouldContainAButton() {
-      Component[] components = jFrame.getContentPane().getComponents();
+      Component[] components = root.getWidnow().getPane().getComponents();
       boolean flag = false;
         for (Component c: components)
         {

@@ -10,8 +10,14 @@ public class Root {
 
 
     public Root(){
-    testButton.setName("testButton");
-    pane.setName("panex");
+    Integer i = 0;
+        for (Component c: pane.getComponents())
+        {
+        if (c.getName() == null)
+        {
+            c.setName(c.getClass()+i.toString());
+        }
+        }
     }
     public void add(Root child){
         pane.add(child.getPane());
