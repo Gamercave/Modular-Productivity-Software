@@ -17,6 +17,12 @@ Feature: Modules have windows
         And the third module and its pane exist in the first module;
 
         Scenario: a window is created using UI designer
-          Given : the UI designer contains a Button
-          When : the UI is instantiated
+          Given  the UI designer contains a Button
+          When  the UI is instantiated
           Then  the UI should contain a button
+
+
+  Scenario:  a user can move a window themselves
+    Given the root module is created
+    When the user Moves a module
+    Then Module location has changed

@@ -2,6 +2,8 @@ package Main;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.util.Arrays;
 
 public class Root {
@@ -10,15 +12,27 @@ public class Root {
 
 
     public Root(){
-    Integer i = 0;
+    int i = 0;
         for (Component c: pane.getComponents())
         {
         if (c.getName() == null)
         {
-            c.setName(c.getClass()+i.toString());
+            c.setName(c.getClass()+ Integer.toString(i));
         }
         }
+        testButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                pane.setLocation(10,10);
+            }
+
+        });
     }
+
+    public void pressTestButton() {
+        testButton.doClick();
+    }
+
     public void add(Root child){
         pane.add(child.getPane());
     }

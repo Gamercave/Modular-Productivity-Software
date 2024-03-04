@@ -17,6 +17,7 @@ JFrame jFrame;
     MPSModule root;
     MPSModule child;
     MPSModule child2;
+    Point moduleLocation;
 
     @Given("the user boots the application")
     public void theUserBootsTheAplication() {
@@ -26,6 +27,11 @@ JFrame jFrame;
     @When("the root module is created")
     public void theRootModuleIsCreated() {
         root = new MPSModule("1");
+        JFrame jFrame1 = new JFrame();
+        jFrame1.add(root.getWidnow().getPane());
+        jFrame1.pack();
+        jFrame1.setVisible(true);
+        moduleLocation = root.getPosition();
     }
 
     @Then("the module has a window positioned at x = {int} , y = {int}")
@@ -36,6 +42,11 @@ JFrame jFrame;
     @Given("A root module exists")
     public void aRootModuleExists() {
         root = new MPSModule("1");
+        JFrame jFrame1 = new JFrame();
+        jFrame1.add(root.getWidnow().getPane());
+        jFrame1.pack();
+        jFrame1.setVisible(true);
+        moduleLocation = root.getPosition();
     }
 
     @When("the user adds a module to the root module")
@@ -76,11 +87,11 @@ JFrame jFrame;
         root.contains(child2);
     }
 
-    @Given(": the UI designer contains a Button")
+    @Given("the UI designer contains a Button")
     public void theUIDesignerContainsAButton() {
     }
 
-    @When(": the UI is instantiated")
+    @When("the UI is instantiated")
     public void theUIIsInstantiated() {
         jFrame = new JFrame();
         root = new MPSModule("1");
@@ -90,8 +101,8 @@ JFrame jFrame;
 
     @Then("the UI should contain a button")
     public void theUIShouldContainAButton() {
-      Component[] components = root.getWidnow().getPane().getComponents();
-      boolean flag = false;
+        Component[] components = root.getWidnow().getPane().getComponents();
+        boolean flag = false;
         for (Component c: components)
         {
             if(c.getName().equals("testButton")){
@@ -100,5 +111,18 @@ JFrame jFrame;
 
         }
         assertTrue(flag);
+    }
+
+    @When("the user Moves a module")
+    public void theUserMovesAModule()  {
+        root.getWidnow().pressTestButton();
+    }
+
+
+
+
+    @Then("Module location has changed")
+    public void moduleLocationHasChanged() {
+        assertNotEquals(moduleLocation, root.getPosition());
     }
 }

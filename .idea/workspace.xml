@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f7fe1e3e-bfe5-4a5b-843f-a10ef07160a9" name="Changes" comment="Huzzah BDD solved the issue of instantiation">
+    <list default="true" id="f7fe1e3e-bfe5-4a5b-843f-a10ef07160a9" name="Changes" comment="made a test for user clicking a button to move a module and ensuring its position changes">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main/Root.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Root.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/Resources/ModuleWindow.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/Resources/ModuleWindow.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/WindowSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/WindowSteps.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,10 +162,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Scenario: a window is created using UI designer" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/Resources/ModuleWindow.feature" />
+      <option name="GLUE" value="test.java" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="HelloWorld" />
+      <option name="NAME_FILTER" value="^a window is created using UI designer$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^a window is created using UI designer$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: a window is created using UI designer" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Cucumber Java.Feature: ModuleWindow" />
         <item itemvalue="Cucumber Java.Feature: ModuleIDs" />
+        <item itemvalue="Cucumber Java.Scenario: a window is created using UI designer" />
         <item itemvalue="Cucumber Java.Feature: Module" />
       </list>
     </recent_temporary>
@@ -184,7 +208,7 @@
       <workItem from="1709046472123" duration="16132000" />
       <workItem from="1709238919726" duration="511000" />
       <workItem from="1709280672337" duration="2784000" />
-      <workItem from="1709537727588" duration="5998000" />
+      <workItem from="1709537727588" duration="11920000" />
     </task>
     <task id="LOCAL-00001" summary="Code done yesterday mainly focussed on testing how to make unieque IDs very rough">
       <option name="closed" value="true" />
@@ -258,7 +282,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709542968089</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="ensures names are set if they are not this should likely be changed to ensure that its the ID of the parent">
+      <option name="closed" value="true" />
+      <created>1709544252060</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1709544252060</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -284,7 +316,9 @@
     <MESSAGE value="added a loop test for testing x number of module IDs and have started playing around with jframes etc" />
     <MESSAGE value="Jframe tests exist" />
     <MESSAGE value="Huzzah BDD solved the issue of instantiation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Huzzah BDD solved the issue of instantiation" />
+    <MESSAGE value="ensures names are set if they are not this should likely be changed to ensure that its the ID of the parent" />
+    <MESSAGE value="made a test for user clicking a button to move a module and ensuring its position changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="made a test for user clicking a button to move a module and ensuring its position changes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -297,26 +331,6 @@
           <url>file://$PROJECT_DIR$/out/production/HelloWorld/Main.class</url>
           <line>51</line>
           <option name="timeStamp" value="38" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/WindowSteps.java</url>
-          <line>97</line>
-          <option name="timeStamp" value="45" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/WindowSteps.java</url>
-          <line>94</line>
-          <option name="timeStamp" value="46" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/WindowSteps.java</url>
-          <line>95</line>
-          <option name="timeStamp" value="47" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/WindowSteps.java</url>
-          <line>96</line>
-          <option name="timeStamp" value="48" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
