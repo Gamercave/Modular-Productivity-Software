@@ -1,4 +1,4 @@
-package Main;
+package Main.Module;
 
 import java.awt.*;
 import java.util.HashMap;
@@ -7,19 +7,19 @@ public class MPSModule {
     private String id;
     private final HashMap<String, MPSModule> children;
 
-    private final Root window;
+    private final ModuleUI window;
 
 
     public MPSModule(String id) {// Only for use when creating root Module
         this.id = id;
         children = new HashMap<>();
-        window = new Root();
+        window = new ModuleUI(this);
     }
 
     public MPSModule(MPSModule parent) {
 
         children = new HashMap<>();
-        window = new Root();
+        window = new ModuleUI(this);
         this.id = parent.addModule(this);
 
     }
@@ -32,7 +32,7 @@ public class MPSModule {
         return childID;
     }
 
-    public Root getWidnow() {
+    public ModuleUI getWidnow() {
         return window;
     }
 

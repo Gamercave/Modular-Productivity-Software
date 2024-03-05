@@ -1,6 +1,6 @@
 package test.java;
 
-import Main.MPSModule;
+import Main.Module.MPSModule;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;

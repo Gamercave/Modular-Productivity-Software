@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="Main.Root">
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="Main.Module.ModuleUI">
   <grid id="27dc6" binding="pane" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
     <constraints>
       <xy x="112" y="25" width="581" height="504"/>

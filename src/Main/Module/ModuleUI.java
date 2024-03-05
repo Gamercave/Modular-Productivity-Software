@@ -1,4 +1,4 @@
-package Main;
+package Main.Module;
 
 import javax.swing.*;
 import java.awt.*;
@@ -6,20 +6,15 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.Arrays;
 
-public class Root {
+public class ModuleUI {
+    private MPSModule parent;
     private JPanel pane;
     private JButton testButton;
 
 
-    public Root(){
-    int i = 0;
-        for (Component c: pane.getComponents())
-        {
-        if (c.getName() == null)
-        {
-            c.setName(c.getClass()+ Integer.toString(i));
-        }
-        }
+    public ModuleUI(MPSModule parent){
+        setNamesOfUiItems();
+        this.parent = parent;
         testButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -29,11 +24,23 @@ public class Root {
         });
     }
 
+    private void setNamesOfUiItems() {
+        int i = 0;
+        for (Component c: pane.getComponents())
+        {
+        if (c.getName() == null)
+        {
+            c.setName(c.getClass()+ Integer.toString(i));
+        }
+        }
+    }
+
     public void pressTestButton() {
         testButton.doClick();
     }
 
-    public void add(Root child){
+
+    public void add(ModuleUI child){
         pane.add(child.getPane());
     }
 
@@ -45,14 +52,13 @@ public class Root {
         return new Point(pane.getX(), pane.getY());
     }
 
-    public Boolean Contains(Root window) {
+    public Boolean Contains(ModuleUI window) {
         return Arrays.stream(pane.getComponents()).toList().contains(window.getPane());
 
     }
 
-    public void remove(Root window) {
+    public void remove(ModuleUI window) {
         pane.remove(window.getPane());
     }
-
 
 }

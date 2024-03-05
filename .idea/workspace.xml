@@ -6,8 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="f7fe1e3e-bfe5-4a5b-843f-a10ef07160a9" name="Changes" comment="made a test for user clicking a button to move a module and ensuring its position changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/Root.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Root.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/Resources/ModuleWindow.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/Resources/ModuleWindow.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/MPSModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Module/MPSModule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/Root.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Module/ModuleUI.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/Root.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Module/ModuleUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/GetModuleIDTestSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/GetModuleIDTestSteps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/WindowSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/WindowSteps.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -73,7 +76,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;onboarding.tips.debug.path&quot;: &quot;/Users/jennyjames-ross/IdeaProjects/HelloWorld/src/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Global Libraries&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.17&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
@@ -94,11 +97,12 @@
       <recent name="Main" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Main/Module" />
       <recent name="$PROJECT_DIR$/src/Main" />
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Feature: ModuleWindow">
+  <component name="RunManager" selected="Cucumber Java.Feature: ModuleIDs">
     <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main.Main" />
       <module name="HelloWorld" />
@@ -184,8 +188,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber Java.Feature: ModuleWindow" />
         <item itemvalue="Cucumber Java.Feature: ModuleIDs" />
+        <item itemvalue="Cucumber Java.Feature: ModuleWindow" />
         <item itemvalue="Cucumber Java.Scenario: a window is created using UI designer" />
         <item itemvalue="Cucumber Java.Feature: Module" />
       </list>
@@ -209,6 +213,8 @@
       <workItem from="1709238919726" duration="511000" />
       <workItem from="1709280672337" duration="2784000" />
       <workItem from="1709537727588" duration="11920000" />
+      <workItem from="1709631470545" duration="174000" />
+      <workItem from="1709631658422" duration="396000" />
     </task>
     <task id="LOCAL-00001" summary="Code done yesterday mainly focussed on testing how to make unieque IDs very rough">
       <option name="closed" value="true" />
@@ -340,6 +346,7 @@
         <PinnedItemInfo parentTag="Core.Module" memberName="moduleID" />
         <PinnedItemInfo parentTag="Main.MPSModule" memberName="window" />
         <PinnedItemInfo parentTag="java.lang.String" memberName="value" />
+        <PinnedItemInfo parentTag="Main.Root$2" memberName="this$0" />
       </pinned-members>
     </pin-to-top-manager>
   </component>
