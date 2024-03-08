@@ -8,12 +8,14 @@ public class MPSModule {
     private final HashMap<String, MPSModule> children;
 
     private final ModuleUI window;
+    private MPSModule parent;
 
 
     public MPSModule(String id) {// Only for use when creating root Module
         this.id = id;
         children = new HashMap<>();
         window = new ModuleUI(this);
+        this.parent = parent;
     }
 
     public MPSModule(MPSModule parent) {
@@ -21,6 +23,7 @@ public class MPSModule {
         children = new HashMap<>();
         window = new ModuleUI(this);
         this.id = parent.addModule(this);
+        this.parent = parent;
 
     }
 
@@ -54,6 +57,7 @@ public class MPSModule {
     }
 
     public Point getPosition() {
+
         return window.getPosition();
     }
 
@@ -79,5 +83,9 @@ public class MPSModule {
     private void removeModule(MPSModule child) {
         children.remove(child.getID());
         window.remove(child.getWidnow());
+    }
+
+    public MPSModule getParent() {
+        return parent;
     }
 }
