@@ -8,7 +8,8 @@ Feature: Modules have windows
       Given A root module exists
       When the user adds a module to the root module
       Then the root module contains both the child module and window
-      Scenario: a second module is removed from a different module
+
+  Scenario: a second module is removed from a different module
         Given A root module exists
         And A second module is added to the root module
         And A third module is added to the second module

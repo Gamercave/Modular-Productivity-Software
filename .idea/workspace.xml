@@ -4,14 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f7fe1e3e-bfe5-4a5b-843f-a10ef07160a9" name="Changes" comment="made a test for user clicking a button to move a module and ensuring its position changes">
+    <list default="true" id="f7fe1e3e-bfe5-4a5b-843f-a10ef07160a9" name="Changes" comment="Refactored some code">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/MPSModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Module/MPSModule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/Root.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Module/ModuleUI.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/Root.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Module/ModuleUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/Module/MPSModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Module/MPSModule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/Module/ModuleUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Module/ModuleUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/Resources/ModuleWindow.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/Resources/ModuleWindow.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/GetModuleIDTestSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/GetModuleIDTestSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/WindowSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/WindowSteps.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +100,7 @@
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Feature: ModuleIDs">
+  <component name="RunManager" selected="Cucumber Java.Feature: ModuleWindow">
     <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main.Main" />
       <module name="HelloWorld" />
@@ -188,8 +186,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber Java.Feature: ModuleIDs" />
         <item itemvalue="Cucumber Java.Feature: ModuleWindow" />
+        <item itemvalue="Cucumber Java.Feature: ModuleIDs" />
         <item itemvalue="Cucumber Java.Scenario: a window is created using UI designer" />
         <item itemvalue="Cucumber Java.Feature: Module" />
       </list>
@@ -214,7 +212,8 @@
       <workItem from="1709280672337" duration="2784000" />
       <workItem from="1709537727588" duration="11920000" />
       <workItem from="1709631470545" duration="174000" />
-      <workItem from="1709631658422" duration="396000" />
+      <workItem from="1709631658422" duration="591000" />
+      <workItem from="1709885881990" duration="443000" />
     </task>
     <task id="LOCAL-00001" summary="Code done yesterday mainly focussed on testing how to make unieque IDs very rough">
       <option name="closed" value="true" />
@@ -296,7 +295,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709544252060</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Refactored some code">
+      <option name="closed" value="true" />
+      <created>1709632170356</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1709632170356</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -324,7 +331,8 @@
     <MESSAGE value="Huzzah BDD solved the issue of instantiation" />
     <MESSAGE value="ensures names are set if they are not this should likely be changed to ensure that its the ID of the parent" />
     <MESSAGE value="made a test for user clicking a button to move a module and ensuring its position changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="made a test for user clicking a button to move a module and ensuring its position changes" />
+    <MESSAGE value="Refactored some code" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactored some code" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

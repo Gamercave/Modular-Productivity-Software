@@ -20,7 +20,7 @@ public class GetModuleIDTestSteps {
 
     @And("Parent has no Children")
     public void parentHasNoChildren() {
-        assertEquals(0, parent.getChildCount());
+        assertEquals(0, parent.getNumChildren());
     }
 
     @When("ChildCreated")

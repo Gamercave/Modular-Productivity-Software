@@ -70,9 +70,6 @@ public class MPSModule {
         return childInWindow && childInMap;
     }
 
-    public int getChildCount() {
-        return children.size();
-    }
 
     public void move(MPSModule moveFrom, MPSModule moveToo) {
         moveFrom.removeModule(this);

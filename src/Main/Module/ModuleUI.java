@@ -18,6 +18,7 @@ public class ModuleUI {
         testButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+
                 pane.setLocation(10,10);
             }
 
