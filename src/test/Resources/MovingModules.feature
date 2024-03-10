@@ -5,3 +5,5 @@ Feature: Moving Modules around
     When A random module is moved around randomly 1000 times whist being tracked
     Then The error rate is 0
     And All modules have been visited
+
+    Scenario: Modules are moved using the mouse

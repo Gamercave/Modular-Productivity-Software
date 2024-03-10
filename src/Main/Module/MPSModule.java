@@ -9,13 +9,15 @@ public class MPSModule {
 
     private final ModuleUI window;
     private MPSModule parent;
+    private int nestLevel;
 
 
     public MPSModule(String id) {// Only for use when creating root Module
         this.id = id;
+        nestLevel = 0;
         children = new HashMap<>();
         window = new ModuleUI(this);
-        this.parent = parent;
+        this.parent = null;
     }
 
     public MPSModule(MPSModule parent) {
@@ -24,7 +26,7 @@ public class MPSModule {
         window = new ModuleUI(this);
         this.id = parent.addModule(this);
         this.parent = parent;
-
+        nestLevel = parent.getNestLevel()+1;
     }
 
     public String addModule (MPSModule child) {
@@ -100,6 +102,19 @@ public class MPSModule {
     }
 
     public MPSModule getParent() {
-        return parent;
+        if (parent != null){
+            return parent;
+        }
+        else {
+            return null;
+        }
+    }
+
+    public int getNestLevel() {
+        return nestLevel;
+    }
+
+    public boolean isInBounds(Point point) {
+       return window.isInBounds(point);
     }
 }
