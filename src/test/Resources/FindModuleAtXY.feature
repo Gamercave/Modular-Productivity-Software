@@ -3,5 +3,4 @@ Feature: finding a module at a gien XY Position
     Given the x coordinate of a new module as 1 2
     When the coordinates "0,0" are given
     Then the created module should be returned
-    And Want to do a commit cus i had a error i created and couldnt even revert back
 
