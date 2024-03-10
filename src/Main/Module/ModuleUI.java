@@ -41,8 +41,18 @@ public class ModuleUI {
     }
 
 
-    public void add(ModuleUI child){
-        pane.add(child.getPane());
+    public void add(ModuleUI child) throws IllegalArgumentException{
+        if (child.getPane().getParent() == null)
+        {
+            pane.add(child.getPane());
+            return;
+        }
+
+            child.getPane().getParent().remove(child.getPane());
+            pane.add(child.getPane());
+
+
+
     }
 
     public Container getPane() {

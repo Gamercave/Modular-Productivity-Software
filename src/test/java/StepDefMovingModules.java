@@ -27,7 +27,8 @@ public class StepDefMovingModules {
     @When("A random module is moved around randomly {int} times whist being tracked")
     public void aRandomModuleIsMovedAroundRandomlyTimesWhistBeingTracked(int arg0) {
         Random random = new Random();
-       MPSModule mover = allModules.get(random.nextInt(allModules.size()));
+       MPSModule mover = allModules.get(random.nextInt(0,allModules.size()));
+       allModules.remove(mover);
        for(int i=arg0; i>0; i--){
            MPSModule visited = allModules.get(random.nextInt(0,allModules.size()));
            mover.move(mover.getParent(),visited );

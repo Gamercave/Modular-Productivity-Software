@@ -27,11 +27,16 @@ public class MPSModule {
 
     }
 
-    public String addModule(MPSModule child) {
+    public String addModule (MPSModule child) {
         String childID = getChildID();
         child.setID(childID);
         children.put(childID, child);
-        window.add(child.getWidnow());
+        try {
+            window.add(child.getWidnow());
+        }catch (Exception e){
+            e.toString();
+        }
+
         return childID;
     }
 
@@ -84,7 +89,13 @@ public class MPSModule {
 
     private void removeModule(MPSModule child) {
         children.remove(child.getID());
-        window.remove(child.getWidnow());
+        // catch is error checking right now - being able to see variables is helpfull
+        try{
+            window.remove(child.getWidnow());
+        }catch (Exception e){
+            e.toString();
+        }
+
     }
 
     public MPSModule getParent() {
