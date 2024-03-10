@@ -1,5 +1,7 @@
 package Main.Module;
 
+import Main.ModuleDirectory;
+
 import java.awt.*;
 import java.util.HashMap;
 
@@ -18,6 +20,7 @@ public class MPSModule {
         children = new HashMap<>();
         window = new ModuleUI(this);
         this.parent = null;
+        ModuleDirectory.addModule(this);
     }
 
     public MPSModule(MPSModule parent) {
@@ -27,6 +30,7 @@ public class MPSModule {
         this.id = parent.addModule(this);
         this.parent = parent;
         nestLevel = parent.getNestLevel()+1;
+        ModuleDirectory.addModule(this);
     }
 
     public String addModule (MPSModule child) {
@@ -34,11 +38,8 @@ public class MPSModule {
         child.setID(childID);
         children.put(childID, child);
         //currently for error tracking
-        try {
             window.add(child.getWidnow());
-        }catch (Exception e){
-            e.toString();
-        }
+
 
         return childID;
     }
@@ -83,21 +84,23 @@ public class MPSModule {
     }
 
 
-    public void move(MPSModule moveFrom, MPSModule moveToo) {
-        if (moveFrom != moveToo) {
-            moveFrom.removeModule(this);
+    public void move( MPSModule moveToo) {
+        if (parent != moveToo) {
+            parent.removeModule(this);
             moveToo.addModule(this);
+            System.out.println("moved from: " + parent.getID() + " To: " + moveToo.getID() );
+            return;
         }
+        System.out.println("same");
+
     }
 
     private void removeModule(MPSModule child) {
         children.remove(child.getID());
         // catch is error checking right now - being able to see variables is helpfull
-        try{
+
             window.remove(child.getWidnow());
-        }catch (Exception e){
-            e.toString();
-        }
+
 
     }
 
@@ -116,5 +119,9 @@ public class MPSModule {
 
     public boolean isInBounds(Point point) {
        return window.isInBounds(point);
+    }
+
+    public void setPosition(Point point) {
+        window.setPosition(point);
     }
 }

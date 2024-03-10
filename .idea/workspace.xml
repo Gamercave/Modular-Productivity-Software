@@ -4,14 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f7fe1e3e-bfe5-4a5b-843f-a10ef07160a9" name="Changes" comment="error is now solved was an issue of not setting parent to be null once removed">
-      <change afterPath="$PROJECT_DIR$/src/FindModuleByXYStepdefs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FindModuleFromXYStepDefs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main/ModuleDirectory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/Resources/FindModuleAtXY.feature" afterDir="false" />
+    <list default="true" id="f7fe1e3e-bfe5-4a5b-843f-a10ef07160a9" name="Changes" comment="Considerable amount done mouse movement should now work need to get a test UI up to check">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FindModuleByXYStepdefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/FindModuleByXYStepdefs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main/Module/MPSModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Module/MPSModule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/Module/ModuleUI.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Module/ModuleUI.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main/Module/ModuleUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Module/ModuleUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/Resources/FindModuleAtXY.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/Resources/FindModuleAtXY.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/GetModuleIDTestSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/GetModuleIDTestSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/StepDefMovingModules.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDefMovingModules.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/WindowSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/WindowSteps.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -245,7 +248,7 @@
       <workItem from="1709894641103" duration="2484000" />
       <workItem from="1709897144846" duration="3777000" />
       <workItem from="1710060130798" duration="1775000" />
-      <workItem from="1710073384754" duration="3837000" />
+      <workItem from="1710073384754" duration="8509000" />
     </task>
     <task id="LOCAL-00001" summary="Code done yesterday mainly focussed on testing how to make unieque IDs very rough">
       <option name="closed" value="true" />
@@ -383,7 +386,31 @@
       <option name="project" value="LOCAL" />
       <updated>1710061892968</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="ModuleDirectory now exists and can find a module given an XY postion">
+      <option name="closed" value="true" />
+      <created>1710077642004</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1710077642004</updated>
+    </task>
+    <task id="LOCAL-00019" summary="ModuleDirectory now exists and can find a module given an XY postion">
+      <option name="closed" value="true" />
+      <created>1710077733506</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1710077733506</updated>
+    </task>
+    <task id="LOCAL-00020" summary="ModuleDirectory now exists and can find a module given an XY postion">
+      <option name="closed" value="true" />
+      <created>1710077746743</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1710077746743</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -416,7 +443,9 @@
     <MESSAGE value="error currently exists due to adding a containers parent to itself so changing of hierachy downwards" />
     <MESSAGE value="dont move a module from its parent to its parent change" />
     <MESSAGE value="error is now solved was an issue of not setting parent to be null once removed" />
-    <option name="LAST_COMMIT_MESSAGE" value="error is now solved was an issue of not setting parent to be null once removed" />
+    <MESSAGE value="ModuleDirectory now exists and can find a module given an XY postion" />
+    <MESSAGE value="Considerable amount done mouse movement should now work need to get a test UI up to check" />
+    <option name="LAST_COMMIT_MESSAGE" value="Considerable amount done mouse movement should now work need to get a test UI up to check" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -431,39 +460,9 @@
           <option name="timeStamp" value="38" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Main/Module/MPSModule.java</url>
-          <line>98</line>
-          <option name="timeStamp" value="47" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Main/Module/MPSModule.java</url>
-          <line>39</line>
-          <option name="timeStamp" value="49" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Main/ModuleDirectory.java</url>
-          <line>18</line>
-          <option name="timeStamp" value="54" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Main/ModuleDirectory.java</url>
-          <line>28</line>
-          <option name="timeStamp" value="55" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/FindModuleByXYStepdefs.java</url>
-          <line>33</line>
-          <option name="timeStamp" value="56" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Main/ModuleDirectory.java</url>
-          <line>37</line>
-          <option name="timeStamp" value="57" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Main/ModuleDirectory.java</url>
-          <line>36</line>
-          <option name="timeStamp" value="58" />
+          <url>file://$PROJECT_DIR$/src/test/java/FindModuleByXYStepdefs.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="71" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
