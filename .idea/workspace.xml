@@ -109,7 +109,7 @@
       <recent name="test.java" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Feature: FindModuleAtXY">
+  <component name="RunManager" selected="Cucumber Java.Feature: MovingModules">
     <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main.Main" />
       <module name="HelloWorld" />
@@ -213,10 +213,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber Java.Feature: FindModuleAtXY" />
         <item itemvalue="Cucumber Java.Feature: MovingModules" />
         <item itemvalue="Cucumber Java.Feature: ModuleWindow" />
         <item itemvalue="Cucumber Java.Feature: ModuleIDs" />
+        <item itemvalue="Cucumber Java.Feature: FindModuleAtXY" />
         <item itemvalue="Cucumber Java.Scenario: a window is created using UI designer" />
       </list>
     </recent_temporary>
