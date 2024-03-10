@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f7fe1e3e-bfe5-4a5b-843f-a10ef07160a9" name="Changes" comment="error is now solved was an issue of not setting parent to be null once removed">
-      <change afterPath="$PROJECT_DIR$/src/FindModuleByXYStepdefs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FindModuleFromXYStepDefs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main/ModuleDirectory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/Resources/FindModuleAtXY.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/Module/MPSModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Module/MPSModule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/Module/ModuleUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Module/ModuleUI.java" afterDir="false" />
-    </list>
+    <list default="true" id="f7fe1e3e-bfe5-4a5b-843f-a10ef07160a9" name="Changes" comment="getting rid of an error to figure out where i went wrong" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -109,7 +101,7 @@
       <recent name="test.java" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Feature: MovingModules">
+  <component name="RunManager" selected="Cucumber Java.Feature: FindModuleAtXY">
     <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main.Main" />
       <module name="HelloWorld" />
@@ -213,10 +205,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber Java.Feature: FindModuleAtXY" />
         <item itemvalue="Cucumber Java.Feature: MovingModules" />
         <item itemvalue="Cucumber Java.Feature: ModuleWindow" />
         <item itemvalue="Cucumber Java.Feature: ModuleIDs" />
-        <item itemvalue="Cucumber Java.Feature: FindModuleAtXY" />
         <item itemvalue="Cucumber Java.Scenario: a window is created using UI designer" />
       </list>
     </recent_temporary>
@@ -383,7 +375,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710061892968</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="getting rid of an error to figure out where i went wrong">
+      <option name="closed" value="true" />
+      <created>1710083618368</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1710083618368</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -416,7 +416,8 @@
     <MESSAGE value="error currently exists due to adding a containers parent to itself so changing of hierachy downwards" />
     <MESSAGE value="dont move a module from its parent to its parent change" />
     <MESSAGE value="error is now solved was an issue of not setting parent to be null once removed" />
-    <option name="LAST_COMMIT_MESSAGE" value="error is now solved was an issue of not setting parent to be null once removed" />
+    <MESSAGE value="getting rid of an error to figure out where i went wrong" />
+    <option name="LAST_COMMIT_MESSAGE" value="getting rid of an error to figure out where i went wrong" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
