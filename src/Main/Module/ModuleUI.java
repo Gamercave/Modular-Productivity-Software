@@ -34,6 +34,8 @@ public class ModuleUI {
             c.setName(c.getClass()+ Integer.toString(i));
         }
         }
+        pane.setLocation(0,0);
+        pane.setSize(500,500);
     }
 
     public void pressTestButton() {
@@ -71,4 +73,7 @@ public class ModuleUI {
         parent = null;
     }
 
+    public boolean isInBounds(Point point) {
+       return pane.getBounds().contains(point);
+    }
 }
