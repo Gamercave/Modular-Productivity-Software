@@ -7,10 +7,7 @@
     <properties>
       <background color="-393180"/>
     </properties>
-    <border type="line">
-      <font/>
-      <color color="-11666701"/>
-    </border>
+    <border type="none"/>
     <children>
       <component id="6ec11" class="javax.swing.JButton" binding="testButton">
         <constraints/>
