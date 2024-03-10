@@ -67,6 +67,6 @@ public class GetModuleIDTestSteps {
 
     @When("Child Moves from one parent to another")
     public void childMovesFromOneParentToAnother() {
-        child.move(parent, secondParent);
+        child.move(secondParent);
     }
 }
