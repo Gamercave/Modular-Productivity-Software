@@ -8,8 +8,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main/Module/MPSModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Module/MPSModule.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main/Module/ModuleUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Module/ModuleUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/Resources/MovingModules.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/Resources/MovingModules.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/StepDefMovingModules.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDefMovingModules.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -240,7 +238,7 @@
       <workItem from="1709885881990" duration="2758000" />
       <workItem from="1709894641103" duration="2484000" />
       <workItem from="1709897144846" duration="3777000" />
-      <workItem from="1710060130798" duration="631000" />
+      <workItem from="1710060130798" duration="1617000" />
     </task>
     <task id="LOCAL-00001" summary="Code done yesterday mainly focussed on testing how to make unieque IDs very rough">
       <option name="closed" value="true" />
@@ -362,7 +360,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709897170362</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="dont move a module from its parent to its parent change">
+      <option name="closed" value="true" />
+      <created>1710060816800</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1710060816800</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -410,12 +416,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Main/Module/MPSModule.java</url>
-          <line>94</line>
+          <line>96</line>
           <option name="timeStamp" value="47" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Main/Module/MPSModule.java</url>
-          <line>36</line>
+          <line>37</line>
           <option name="timeStamp" value="49" />
         </line-breakpoint>
       </breakpoints>

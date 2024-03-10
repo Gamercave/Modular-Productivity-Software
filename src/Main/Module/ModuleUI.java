@@ -40,15 +40,13 @@ public class ModuleUI {
         testButton.doClick();
     }
 
-
+// need to remove the throw as it shoudlnt occur currently doing to variable track higher up as it makes checking moduel IDS easher
     public void add(ModuleUI child) throws IllegalArgumentException{
         if (child.getPane().getParent() == null)
         {
             pane.add(child.getPane());
             return;
         }
-
-            child.getPane().getParent().remove(child.getPane());
             pane.add(child.getPane());
 
 
@@ -70,6 +68,7 @@ public class ModuleUI {
 
     public void remove(ModuleUI window) {
         pane.remove(window.getPane());
+        parent = null;
     }
 
 }

@@ -31,6 +31,7 @@ public class MPSModule {
         String childID = getChildID();
         child.setID(childID);
         children.put(childID, child);
+        //currently for error tracking
         try {
             window.add(child.getWidnow());
         }catch (Exception e){
