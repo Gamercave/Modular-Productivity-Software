@@ -31,7 +31,7 @@ public class StepDefMovingModules {
        allModules.remove(mover);
        for(int i=arg0; i>0; i--){
            MPSModule visited = allModules.get(random.nextInt(0,allModules.size()));
-           mover.move(mover.getParent(),visited );
+           mover.move(visited );
            allModules.remove(visited);
        }
     }

@@ -83,9 +83,9 @@ public class MPSModule {
     }
 
 
-    public void move(MPSModule moveFrom, MPSModule moveToo) {
-        if (moveFrom != moveToo) {
-            moveFrom.removeModule(this);
+    public void move(MPSModule moveToo) {
+        if (parent != moveToo) {
+            parent.removeModule(this);
             moveToo.addModule(this);
         }
     }

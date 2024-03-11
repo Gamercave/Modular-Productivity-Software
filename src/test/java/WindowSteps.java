@@ -73,7 +73,7 @@ JFrame jFrame;
 
     @When("the Third module is moved from the second module to the third module")
     public void theThirdModuleIsMovedFromTheSecondModuleToTheThirdModule() {
-        child2.move(child, root);
+        child2.move(root);
     }
 
 
