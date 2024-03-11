@@ -1,7 +1,5 @@
 package Main.Module;
 
-import Main.ModuleDirectory;
-
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -40,7 +38,7 @@ public class ModuleUI {
 
             @Override
             public void mouseReleased(MouseEvent e) {
-                parent.move(ModuleDirectory.findModule(e.getLocationOnScreen()));
+                parent.move(parent);
             }
 
             @Override
