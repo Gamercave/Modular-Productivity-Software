@@ -52,7 +52,7 @@ JFrame jFrame;
     @When("the user adds a module to the root module")
     public void theUserAddsAModuleToTheRootModule() {
         child = new MPSModule("2");
-        root.addModule(child);
+        child.move(root);
     }
 
     @Then("the root module contains both the child module and window")

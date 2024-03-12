@@ -28,19 +28,45 @@ public class MPSModule {
         this.parent = parent;
         nestLevel = parent.getNestLevel()+1;
     }
+    public void move( MPSModule moveToo) {
+        if (parent!= moveToo && parent!=null ) {
+            parent.removeModule(this);
 
-    public String addModule (MPSModule child) {
+        }
+        moveToo.addModule(this);
+    }
+
+    public boolean contains(MPSModule child) {
+        Boolean childInMap;
+        Boolean childInWindow;
+        if (children.get(child.getID()) != null) {
+            childInMap = children.get(child.getID()).equals(child);
+        } else {
+            childInMap = false;
+        }
+
+        childInWindow = window.Contains(child.getWidnow());
+        return childInWindow && childInMap;
+    }
+
+    public boolean isInBounds(Point point) {
+        return window.isInBounds(point);
+    }
+
+    private String addModule (MPSModule child) {
         String childID = getChildID();
         child.setID(childID);
         children.put(childID, child);
-        //currently for error tracking
-        try {
-            window.add(child.getWidnow());
-        }catch (Exception e){
-            e.toString();
-        }
+        window.add(child.getWidnow());
+
 
         return childID;
+    }
+    private void removeModule(MPSModule child) {
+        children.remove(child.getID());
+        window.remove(child.getWidnow());
+
+
     }
 
     public ModuleUI getWidnow() {
@@ -69,52 +95,17 @@ public class MPSModule {
         return window.getPosition();
     }
 
-    public boolean contains(MPSModule child) {
-        Boolean childInMap;
-        Boolean childInWindow;
-        if (children.get(child.getID()) != null) {
-            childInMap = children.get(child.getID()).equals(child);
-        } else {
-            childInMap = false;
-        }
-
-        childInWindow = window.Contains(child.getWidnow());
-        return childInWindow && childInMap;
-    }
 
 
-    public void move( MPSModule moveToo) {
-        if (parent!= moveToo) {
-            parent.removeModule(this);
-            moveToo.addModule(this);
-        }
-    }
 
-    private void removeModule(MPSModule child) {
-        children.remove(child.getID());
-        // catch is error checking right now - being able to see variables is helpfull
-        try{
-            window.remove(child.getWidnow());
-        }catch (Exception e){
-            e.toString();
-        }
 
-    }
 
     public MPSModule getParent() {
-        if (parent != null){
             return parent;
-        }
-        else {
-            return null;
-        }
     }
 
     public int getNestLevel() {
         return nestLevel;
     }
 
-    public boolean isInBounds(Point point) {
-       return window.isInBounds(point);
-    }
 }

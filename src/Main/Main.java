@@ -9,8 +9,8 @@ import javax.swing.*;
 public class Main {
     public static void main(String[] args) {
         MPSModule main = new MPSModule("1");
-        main.addModule(new MPSModule(main));
-        main.addModule(new MPSModule(main));
+        new MPSModule(main);
+        new MPSModule(main);
 
         JFrame jFrame = new JFrame();
         jFrame.add(main.getWidnow().getPane());

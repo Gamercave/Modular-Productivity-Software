@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f7fe1e3e-bfe5-4a5b-843f-a10ef07160a9" name="Changes" comment="i solved that issue by having a rectangle created using the exact on screen location, this however did break testing, beyond that it also became apparent there was an issue of adding a mdoule twice as instantiation calls MPSModule.addModule() rather than MPSModule.getChildID() when changing this it then led to tests failing" />
+    <list default="true" id="f7fe1e3e-bfe5-4a5b-843f-a10ef07160a9" name="Changes" comment="i solved that issue by having a rectangle created using the exact on screen location, this however did break testing, beyond that it also became apparent there was an issue of adding a mdoule twice as instantiation calls MPSModule.addModule() rather than MPSModule.getChildID() when changing this it then led to tests failing">
+      <change beforePath="$PROJECT_DIR$/src/Main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/Module/MPSModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Module/MPSModule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/WindowSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/WindowSteps.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -101,7 +105,7 @@
       <recent name="test.java" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Feature: ModuleWindow">
+  <component name="RunManager" selected="Cucumber Java.Feature: ModuleIDs">
     <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main.Main" />
       <module name="HelloWorld" />
@@ -205,10 +209,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber Java.Feature: ModuleIDs" />
+        <item itemvalue="Cucumber Java.Feature: MovingModules" />
         <item itemvalue="Cucumber Java.Feature: ModuleWindow" />
         <item itemvalue="Cucumber Java.Feature: FindModuleAtXY" />
-        <item itemvalue="Cucumber Java.Feature: MovingModules" />
-        <item itemvalue="Cucumber Java.Feature: ModuleIDs" />
         <item itemvalue="Cucumber Java.Scenario: a window is created using UI designer" />
       </list>
     </recent_temporary>
@@ -486,12 +490,7 @@
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Main/Module/MPSModule.java</url>
           <line>96</line>
-          <option name="timeStamp" value="69" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Main/Module/MPSModule.java</url>
-          <line>98</line>
-          <option name="timeStamp" value="71" />
+          <option name="timeStamp" value="132" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
