@@ -1,5 +1,7 @@
 package Main.Module;
 
+import Main.ModuleDirectory;
+
 import java.awt.*;
 import java.util.HashMap;
 
@@ -18,6 +20,7 @@ public class MPSModule {
         children = new HashMap<>();
         window = new ModuleUI(this);
         this.parent = null;
+        ModuleDirectory.addModule(this);
     }
 
     public MPSModule(MPSModule parent) {
@@ -27,6 +30,7 @@ public class MPSModule {
         this.id = parent.addModule(this);
         this.parent = parent;
         nestLevel = parent.getNestLevel()+1;
+        ModuleDirectory.addModule(this);
     }
     public void move( MPSModule moveToo) {
         if (parent!= moveToo && parent!=null ) {
@@ -56,12 +60,18 @@ public class MPSModule {
     private String addModule (MPSModule child) {
         String childID = getChildID();
         child.setID(childID);
+        child.setNestLevel(nestLevel++);
         children.put(childID, child);
         window.add(child.getWidnow());
 
 
         return childID;
     }
+
+    private void setNestLevel(int i) {
+        nestLevel = i;
+    }
+
     private void removeModule(MPSModule child) {
         children.remove(child.getID());
         window.remove(child.getWidnow());

@@ -1,3 +1,5 @@
+package test.java;
+
 import Main.Module.MPSModule;
 import Main.ModuleDirectory;
 import io.cucumber.java.en.Given;
@@ -15,7 +17,6 @@ public class FindModuleByXYStepdefs {
     @Given("the x coordinate of a new module as {int} {int}")
     public void theXCoordinateOfANewModuleAs(int arg0, int arg1) {
         moduleToFind = new MPSModule("FindMe");
-        ModuleDirectory.addModule(moduleToFind);
     }
 
 

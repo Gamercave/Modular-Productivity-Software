@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f7fe1e3e-bfe5-4a5b-843f-a10ef07160a9" name="Changes" comment="i solved that issue by having a rectangle created using the exact on screen location, this however did break testing, beyond that it also became apparent there was an issue of adding a mdoule twice as instantiation calls MPSModule.addModule() rather than MPSModule.getChildID() when changing this it then led to tests failing">
-      <change beforePath="$PROJECT_DIR$/src/Main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Main.java" afterDir="false" />
+    <list default="true" id="f7fe1e3e-bfe5-4a5b-843f-a10ef07160a9" name="Changes" comment="refactored lightly">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FindModuleByXYStepdefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/FindModuleByXYStepdefs.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main/Module/MPSModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Module/MPSModule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/WindowSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/WindowSteps.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +105,7 @@
       <recent name="test.java" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Feature: ModuleIDs">
+  <component name="RunManager" selected="Cucumber Java.Feature: MovingModules">
     <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main.Main" />
       <module name="HelloWorld" />
@@ -209,10 +209,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber Java.Feature: ModuleIDs" />
         <item itemvalue="Cucumber Java.Feature: MovingModules" />
-        <item itemvalue="Cucumber Java.Feature: ModuleWindow" />
         <item itemvalue="Cucumber Java.Feature: FindModuleAtXY" />
+        <item itemvalue="Cucumber Java.Feature: ModuleIDs" />
+        <item itemvalue="Cucumber Java.Feature: ModuleWindow" />
         <item itemvalue="Cucumber Java.Scenario: a window is created using UI designer" />
       </list>
     </recent_temporary>
@@ -412,7 +412,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710149465247</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="refactored lightly">
+      <option name="closed" value="true" />
+      <created>1710247190044</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1710247190044</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -448,7 +456,8 @@
     <MESSAGE value="getting rid of an error to figure out where i went wrong" />
     <MESSAGE value="current error issue &#10;&#10;Exception in thread &quot;AWT-EventQueue-0&quot; java.lang.NullPointerException: Cannot invoke &quot;Main.Module.MPSModule.addModule(Main.Module.MPSModule)&quot; because &quot;moveToo&quot; is null&#10;&#10;this applies when using mouse rather than giving specific cordinates" />
     <MESSAGE value="i solved that issue by having a rectangle created using the exact on screen location, this however did break testing, beyond that it also became apparent there was an issue of adding a mdoule twice as instantiation calls MPSModule.addModule() rather than MPSModule.getChildID() when changing this it then led to tests failing" />
-    <option name="LAST_COMMIT_MESSAGE" value="i solved that issue by having a rectangle created using the exact on screen location, this however did break testing, beyond that it also became apparent there was an issue of adding a mdoule twice as instantiation calls MPSModule.addModule() rather than MPSModule.getChildID() when changing this it then led to tests failing" />
+    <MESSAGE value="refactored lightly" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactored lightly" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -473,7 +482,7 @@
           <option name="timeStamp" value="55" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/FindModuleByXYStepdefs.java</url>
+          <url>file://$PROJECT_DIR$/src/test/java/FindModuleByXYStepdefs.java</url>
           <line>33</line>
           <option name="timeStamp" value="56" />
         </line-breakpoint>
@@ -486,11 +495,6 @@
           <url>file://$PROJECT_DIR$/src/Main/ModuleDirectory.java</url>
           <line>36</line>
           <option name="timeStamp" value="58" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Main/Module/MPSModule.java</url>
-          <line>96</line>
-          <option name="timeStamp" value="132" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
