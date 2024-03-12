@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f7fe1e3e-bfe5-4a5b-843f-a10ef07160a9" name="Changes" comment="current error issue &#10;&#10;Exception in thread &quot;AWT-EventQueue-0&quot; java.lang.NullPointerException: Cannot invoke &quot;Main.Module.MPSModule.addModule(Main.Module.MPSModule)&quot; because &quot;moveToo&quot; is null&#10;&#10;this applies when using mouse rather than giving specific cordinates">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/Module/MPSModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Module/MPSModule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/Module/ModuleUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Module/ModuleUI.java" afterDir="false" />
-    </list>
+    <list default="true" id="f7fe1e3e-bfe5-4a5b-843f-a10ef07160a9" name="Changes" comment="i solved that issue by having a rectangle created using the exact on screen location, this however did break testing, beyond that it also became apparent there was an issue of adding a mdoule twice as instantiation calls MPSModule.addModule() rather than MPSModule.getChildID() when changing this it then led to tests failing" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -242,7 +238,7 @@
       <workItem from="1709897144846" duration="3777000" />
       <workItem from="1710060130798" duration="1775000" />
       <workItem from="1710073384754" duration="3837000" />
-      <workItem from="1710147148019" duration="1858000" />
+      <workItem from="1710147148019" duration="2335000" />
     </task>
     <task id="LOCAL-00001" summary="Code done yesterday mainly focussed on testing how to make unieque IDs very rough">
       <option name="closed" value="true" />
@@ -404,7 +400,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710147568163</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="i solved that issue by having a rectangle created using the exact on screen location, this however did break testing, beyond that it also became apparent there was an issue of adding a mdoule twice as instantiation calls MPSModule.addModule() rather than MPSModule.getChildID() when changing this it then led to tests failing">
+      <option name="closed" value="true" />
+      <created>1710149465247</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1710149465247</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -439,7 +443,8 @@
     <MESSAGE value="error is now solved was an issue of not setting parent to be null once removed" />
     <MESSAGE value="getting rid of an error to figure out where i went wrong" />
     <MESSAGE value="current error issue &#10;&#10;Exception in thread &quot;AWT-EventQueue-0&quot; java.lang.NullPointerException: Cannot invoke &quot;Main.Module.MPSModule.addModule(Main.Module.MPSModule)&quot; because &quot;moveToo&quot; is null&#10;&#10;this applies when using mouse rather than giving specific cordinates" />
-    <option name="LAST_COMMIT_MESSAGE" value="current error issue &#10;&#10;Exception in thread &quot;AWT-EventQueue-0&quot; java.lang.NullPointerException: Cannot invoke &quot;Main.Module.MPSModule.addModule(Main.Module.MPSModule)&quot; because &quot;moveToo&quot; is null&#10;&#10;this applies when using mouse rather than giving specific cordinates" />
+    <MESSAGE value="i solved that issue by having a rectangle created using the exact on screen location, this however did break testing, beyond that it also became apparent there was an issue of adding a mdoule twice as instantiation calls MPSModule.addModule() rather than MPSModule.getChildID() when changing this it then led to tests failing" />
+    <option name="LAST_COMMIT_MESSAGE" value="i solved that issue by having a rectangle created using the exact on screen location, this however did break testing, beyond that it also became apparent there was an issue of adding a mdoule twice as instantiation calls MPSModule.addModule() rather than MPSModule.getChildID() when changing this it then led to tests failing" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -480,37 +485,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Main/Module/MPSModule.java</url>
-          <line>99</line>
-          <option name="timeStamp" value="59" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Main/Module/ModuleUI.java</url>
-          <line>43</line>
-          <option name="timeStamp" value="60" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Main/Module/MPSModule.java</url>
           <line>96</line>
-          <option name="timeStamp" value="61" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Main/Module/MPSModule.java</url>
-          <line>97</line>
-          <option name="timeStamp" value="64" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Main/Module/MPSModule.java</url>
-          <line>109</line>
           <option name="timeStamp" value="69" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Main/Module/MPSModule.java</url>
-          <line>110</line>
-          <option name="timeStamp" value="70" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Main/Module/MPSModule.java</url>
-          <line>112</line>
+          <line>98</line>
           <option name="timeStamp" value="71" />
         </line-breakpoint>
       </breakpoints>
