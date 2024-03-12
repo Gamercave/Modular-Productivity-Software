@@ -112,4 +112,8 @@ public class ModuleUI {
 
        //return pane.getBounds().contains(point);
     }
+
+    public void validate() {
+        pane.validate();
+    }
 }

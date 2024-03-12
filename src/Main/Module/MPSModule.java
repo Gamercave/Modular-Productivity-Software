@@ -27,7 +27,7 @@ public class MPSModule {
 
         children = new HashMap<>();
         window = new ModuleUI(this);
-        this.id = parent.addModule(this);
+        parent.addModule(this);
         this.parent = parent;
         nestLevel = parent.getNestLevel()+1;
         ModuleDirectory.addModule(this);
@@ -59,26 +59,32 @@ public class MPSModule {
 
 
 
-    private String addModule (MPSModule child) {
+    private void addModule (MPSModule child) {
         String childID = getChildID();
         child.setID(childID);
         child.setNestLevel(nestLevel++);
         children.put(childID, child);
         window.add(child.getWidnow());
+        this.validate();
 
-
-        return childID;
     }
+
+
     private void removeModule(MPSModule child) {
         children.remove(child.getID());
         window.remove(child.getWidnow());
-
+        this.validate();
 
     }
 
     public boolean isInBounds(Point point) {
         return window.isInBounds(point);
     }
+    private void validate() {
+        window.validate();
+    }
+
+
     private void setNestLevel(int i) {
         nestLevel = i;
     }

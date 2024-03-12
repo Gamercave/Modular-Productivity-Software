@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f7fe1e3e-bfe5-4a5b-843f-a10ef07160a9" name="Changes" comment="this creates the error of location on screen preventing the FindModuleAtXY.feature to pass">
+    <list default="true" id="f7fe1e3e-bfe5-4a5b-843f-a10ef07160a9" name="Changes" comment="just pushing">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/Module/MPSModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Module/MPSModule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/Module/ModuleUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Module/ModuleUI.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +105,7 @@
       <recent name="test.java" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Feature: FindModuleAtXY">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main.Main" />
       <module name="HelloWorld" />
@@ -209,8 +211,8 @@
       <list>
         <item itemvalue="Cucumber Java.Feature: FindModuleAtXY" />
         <item itemvalue="Cucumber Java.Feature: MovingModules" />
-        <item itemvalue="Cucumber Java.Feature: ModuleIDs" />
         <item itemvalue="Cucumber Java.Feature: ModuleWindow" />
+        <item itemvalue="Cucumber Java.Feature: ModuleIDs" />
         <item itemvalue="Cucumber Java.Scenario: a window is created using UI designer" />
       </list>
     </recent_temporary>
@@ -442,7 +444,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710250198842</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="just pushing">
+      <option name="closed" value="true" />
+      <created>1710255258792</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1710255258792</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -482,7 +492,8 @@
     <MESSAGE value="refactored lightly - this causes an error same as earlier one ()&#10;&#10;Step failed&#10;java.lang.IllegalArgumentException: adding container's parent to itself&#10;&#9;at java.desktop/java.awt.Container.checkAddToSelf(Container.java:505)&#10;&#9;at java.desktop/java.awt.Container.addImpl(Container.java:1118)&#10;&#9;at java.desktop/java.awt.Container.add(Container.java:440)&#10;&#9;at Main.Module.ModuleUI.add(ModuleUI.java:80)&#10;&#9;at Main.Module.MPSModule.addModule(MPSModule.java:65)&#10;&#9;at Main.Module.MPSModule.move(MPSModule.java:40)&#10;&#9;at test.java.StepDefMovingModules.aRandomModuleIsMovedAroundRandomlyTimesWhistBeingTracked(StepDefMovingModules.java:34)&#10;&#9;at ✽.A random module is moved around randomly 1000 times whist being tracked(file:///Users/jennyjames-ross/IdeaProjects/Modular-Productivity-Software/src/test/Resources/MovingModules.feature:5)" />
     <MESSAGE value="had a line outside of if statment i believe issue to now be fixed" />
     <MESSAGE value="this creates the error of location on screen preventing the FindModuleAtXY.feature to pass" />
-    <option name="LAST_COMMIT_MESSAGE" value="this creates the error of location on screen preventing the FindModuleAtXY.feature to pass" />
+    <MESSAGE value="just pushing" />
+    <option name="LAST_COMMIT_MESSAGE" value="just pushing" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
