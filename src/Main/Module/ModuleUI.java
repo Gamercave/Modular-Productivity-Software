@@ -1,5 +1,7 @@
 package Main.Module;
 
+import Main.ModuleDirectory;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -38,7 +40,7 @@ public class ModuleUI {
 
             @Override
             public void mouseReleased(MouseEvent e) {
-                parent.move(parent);
+                parent.move(ModuleDirectory.findModule(e.getLocationOnScreen()));
             }
 
             @Override
@@ -103,6 +105,11 @@ public class ModuleUI {
     }
 
     public boolean isInBounds(Point point) {
-       return pane.getBounds().contains(point);
+        Rectangle rectangle = pane.getBounds();
+        rectangle.setLocation(pane.getLocationOnScreen());
+        return rectangle.contains(point);
+
+
+       //return pane.getBounds().contains(point);
     }
 }

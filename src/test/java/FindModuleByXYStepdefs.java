@@ -6,6 +6,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
+import javax.swing.*;
 import java.awt.*;
 
 import static org.junit.Assert.assertSame;
@@ -14,9 +15,17 @@ import static org.junit.Assert.assertSame;
 public class FindModuleByXYStepdefs {
     private MPSModule moduleToFind;
     private MPSModule foundModule;
+
+    private JFrame jFrame;
     @Given("the x coordinate of a new module as {int} {int}")
     public void theXCoordinateOfANewModuleAs(int arg0, int arg1) {
         moduleToFind = new MPSModule("FindMe");
+        jFrame = new JFrame();
+        jFrame.add(moduleToFind.getWidnow().getPane());
+        jFrame.pack();
+        jFrame.setVisible(true);
+
+
     }
 
 

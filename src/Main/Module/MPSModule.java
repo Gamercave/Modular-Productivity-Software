@@ -57,9 +57,7 @@ public class MPSModule {
         return childInWindow && childInMap;
     }
 
-    public boolean isInBounds(Point point) {
-        return window.isInBounds(point);
-    }
+
 
     private String addModule (MPSModule child) {
         String childID = getChildID();
@@ -71,17 +69,21 @@ public class MPSModule {
 
         return childID;
     }
-
-    private void setNestLevel(int i) {
-        nestLevel = i;
-    }
-
     private void removeModule(MPSModule child) {
         children.remove(child.getID());
         window.remove(child.getWidnow());
 
 
     }
+
+    public boolean isInBounds(Point point) {
+        return window.isInBounds(point);
+    }
+    private void setNestLevel(int i) {
+        nestLevel = i;
+    }
+
+
 
     public ModuleUI getWidnow() {
         return window;

@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f7fe1e3e-bfe5-4a5b-843f-a10ef07160a9" name="Changes" comment="refactored lightly - this causes an error same as earlier one ()&#10;&#10;Step failed&#10;java.lang.IllegalArgumentException: adding container's parent to itself&#10;&#9;at java.desktop/java.awt.Container.checkAddToSelf(Container.java:505)&#10;&#9;at java.desktop/java.awt.Container.addImpl(Container.java:1118)&#10;&#9;at java.desktop/java.awt.Container.add(Container.java:440)&#10;&#9;at Main.Module.ModuleUI.add(ModuleUI.java:80)&#10;&#9;at Main.Module.MPSModule.addModule(MPSModule.java:65)&#10;&#9;at Main.Module.MPSModule.move(MPSModule.java:40)&#10;&#9;at test.java.StepDefMovingModules.aRandomModuleIsMovedAroundRandomlyTimesWhistBeingTracked(StepDefMovingModules.java:34)&#10;&#9;at ✽.A random module is moved around randomly 1000 times whist being tracked(file:///Users/jennyjames-ross/IdeaProjects/Modular-Productivity-Software/src/test/Resources/MovingModules.feature:5)">
+    <list default="true" id="f7fe1e3e-bfe5-4a5b-843f-a10ef07160a9" name="Changes" comment="had a line outside of if statment i believe issue to now be fixed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main/Module/MPSModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Module/MPSModule.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main/Module/ModuleUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Module/ModuleUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/Resources/FindModuleAtXY.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/Resources/FindModuleAtXY.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/FindModuleByXYStepdefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/FindModuleByXYStepdefs.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -428,7 +430,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710248989248</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="had a line outside of if statment i believe issue to now be fixed">
+      <option name="closed" value="true" />
+      <created>1710249524711</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1710249524711</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -466,7 +476,8 @@
     <MESSAGE value="i solved that issue by having a rectangle created using the exact on screen location, this however did break testing, beyond that it also became apparent there was an issue of adding a mdoule twice as instantiation calls MPSModule.addModule() rather than MPSModule.getChildID() when changing this it then led to tests failing" />
     <MESSAGE value="refactored lightly" />
     <MESSAGE value="refactored lightly - this causes an error same as earlier one ()&#10;&#10;Step failed&#10;java.lang.IllegalArgumentException: adding container's parent to itself&#10;&#9;at java.desktop/java.awt.Container.checkAddToSelf(Container.java:505)&#10;&#9;at java.desktop/java.awt.Container.addImpl(Container.java:1118)&#10;&#9;at java.desktop/java.awt.Container.add(Container.java:440)&#10;&#9;at Main.Module.ModuleUI.add(ModuleUI.java:80)&#10;&#9;at Main.Module.MPSModule.addModule(MPSModule.java:65)&#10;&#9;at Main.Module.MPSModule.move(MPSModule.java:40)&#10;&#9;at test.java.StepDefMovingModules.aRandomModuleIsMovedAroundRandomlyTimesWhistBeingTracked(StepDefMovingModules.java:34)&#10;&#9;at ✽.A random module is moved around randomly 1000 times whist being tracked(file:///Users/jennyjames-ross/IdeaProjects/Modular-Productivity-Software/src/test/Resources/MovingModules.feature:5)" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactored lightly - this causes an error same as earlier one ()&#10;&#10;Step failed&#10;java.lang.IllegalArgumentException: adding container's parent to itself&#10;&#9;at java.desktop/java.awt.Container.checkAddToSelf(Container.java:505)&#10;&#9;at java.desktop/java.awt.Container.addImpl(Container.java:1118)&#10;&#9;at java.desktop/java.awt.Container.add(Container.java:440)&#10;&#9;at Main.Module.ModuleUI.add(ModuleUI.java:80)&#10;&#9;at Main.Module.MPSModule.addModule(MPSModule.java:65)&#10;&#9;at Main.Module.MPSModule.move(MPSModule.java:40)&#10;&#9;at test.java.StepDefMovingModules.aRandomModuleIsMovedAroundRandomlyTimesWhistBeingTracked(StepDefMovingModules.java:34)&#10;&#9;at ✽.A random module is moved around randomly 1000 times whist being tracked(file:///Users/jennyjames-ross/IdeaProjects/Modular-Productivity-Software/src/test/Resources/MovingModules.feature:5)" />
+    <MESSAGE value="had a line outside of if statment i believe issue to now be fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="had a line outside of if statment i believe issue to now be fixed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -504,6 +515,36 @@
           <url>file://$PROJECT_DIR$/src/Main/ModuleDirectory.java</url>
           <line>36</line>
           <option name="timeStamp" value="58" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/FindModuleByXYStepdefs.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="133" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/FindModuleByXYStepdefs.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="134" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/FindModuleByXYStepdefs.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="135" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Main/Module/ModuleUI.java</url>
+          <line>107</line>
+          <option name="timeStamp" value="136" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Main/Module/ModuleUI.java</url>
+          <line>108</line>
+          <option name="timeStamp" value="137" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Main/Module/ModuleUI.java</url>
+          <line>109</line>
+          <option name="timeStamp" value="138" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
