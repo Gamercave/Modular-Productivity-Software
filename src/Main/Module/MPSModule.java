@@ -33,11 +33,15 @@ public class MPSModule {
         ModuleDirectory.addModule(this);
     }
     public void move( MPSModule moveToo) {
-        if (parent!= moveToo && parent!=null ) {
-            parent.removeModule(this);
+        if (parent!= moveToo ) {
+            if (parent !=null)
+            {
+                parent.removeModule(this);
+            }
 
+            moveToo.addModule(this);
         }
-        moveToo.addModule(this);
+
     }
 
     public boolean contains(MPSModule child) {

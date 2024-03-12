@@ -77,11 +77,12 @@ public class ModuleUI {
             pane.add(child.getPane());
             return;
         }
-            pane.add(child.getPane());
 
 
 
     }
+
+
 
     public Container getPane() {
         return pane;
