@@ -11,14 +11,14 @@ import java.awt.event.MouseListener;
 import java.util.Arrays;
 
 public class ModuleUI {
-    private MPSModule parent;
+    private MPSModule moduleLogic;
     private JPanel pane;
     private JButton testButton;
 
 
-    public ModuleUI(MPSModule parent){
+    public ModuleUI(MPSModule logic){
         setNamesOfUiItems();
-        this.parent = parent;
+        this.moduleLogic = logic;
         testButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -40,7 +40,7 @@ public class ModuleUI {
 
             @Override
             public void mouseReleased(MouseEvent e) {
-                parent.move(ModuleDirectory.findModule(e.getLocationOnScreen()));
+                moduleLogic.move(ModuleDirectory.findModule(e.getLocationOnScreen()));
             }
 
             @Override
@@ -101,7 +101,7 @@ public class ModuleUI {
 
     public void remove(ModuleUI window) {
         pane.remove(window.getPane());
-        parent = null;
+        moduleLogic = null;
     }
 
     public boolean isInBounds(Point point) {
