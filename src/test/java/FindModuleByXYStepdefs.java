@@ -21,6 +21,7 @@ public class FindModuleByXYStepdefs {
     public void theXCoordinateOfANewModuleAs(int arg0, int arg1) {
         moduleToFind = new MPSModule("FindMe");
         jFrame = new JFrame();
+        moduleToFind.getPane().setLocation(arg0,arg1);
         jFrame.add(moduleToFind.getPane());
         jFrame.pack();
         jFrame.setVisible(true);
