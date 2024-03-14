@@ -2,9 +2,9 @@
 ## What is the Project
 The aim of this project is to produce a freely available and editable User interface framework which allows for customisability of all aspects of a Module. A module would be a functionality such as:
 
- •	a word processor.
+ •	A word processor.
 
- •	an mp3 player.
+ •	An mp3 player.
  
  The following traits are examples of customisability:
  
