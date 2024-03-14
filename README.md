@@ -26,13 +26,14 @@ Ultimately, the intention for this framework is to maximise accessibility for al
 
  
 # The Report
-The report produced will explain my research and the problem space. I will then take an anylitical look into my development process reviewing decisions i have made discussing the flaws and strengths of the project, which will allow me to continue to develop post submission.
+The report produced will explain my research and the problem space. I will then take an anylitical look into my development process, reviewing decisions i have made discussing the flaws and strengths of the project, which will allow me to continue to develop post submission.
 # Project Deliverable
 The deliverable for this project comes in three parts
 - The Software
 - The Documentation
+- The Project
 ## The Software
-The software by April should contain:
+By April the should contain should contain:
 - a modularity system which allows for multiple aplications and/or utilities to be displayed on the screen at a single time
 - Customisability: Every Aspect of a given module should be customisable from its back ground colour to display shape etc.
 - A Word Processor
