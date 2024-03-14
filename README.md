@@ -14,7 +14,7 @@ The aim of this project is to produce a freely available and editable User inter
  
  •	Disabling word count.
  
- •	Disabling playback bar in an MP3 player, 
+ •	Disabling playback bar in an MP3 player.
  
  •	Adjust appearance of individual information.
  
