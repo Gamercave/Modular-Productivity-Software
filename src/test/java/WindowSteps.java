@@ -28,7 +28,7 @@ JFrame jFrame;
     public void theRootModuleIsCreated() {
         root = new MPSModule("1");
         JFrame jFrame1 = new JFrame();
-        jFrame1.add(root.getWidnow().getPane());
+        jFrame1.add(root.getPane());
         jFrame1.pack();
         jFrame1.setVisible(true);
         moduleLocation = root.getPosition();
@@ -43,7 +43,7 @@ JFrame jFrame;
     public void aRootModuleExists() {
         root = new MPSModule("1");
         JFrame jFrame1 = new JFrame();
-        jFrame1.add(root.getWidnow().getPane());
+        jFrame1.add(root.getPane());
         jFrame1.pack();
         jFrame1.setVisible(true);
         moduleLocation = root.getPosition();
@@ -95,13 +95,13 @@ JFrame jFrame;
     public void theUIIsInstantiated() {
         jFrame = new JFrame();
         root = new MPSModule("1");
-        jFrame.setContentPane(root.getWidnow().getPane());
+        jFrame.setContentPane(root.getPane());
         jFrame.pack();
     }
 
     @Then("the UI should contain a button")
     public void theUIShouldContainAButton() {
-        Component[] components = root.getWidnow().getPane().getComponents();
+        Component[] components = root.getPane().getComponents();
         boolean flag = false;
         for (Component c: components)
         {
@@ -115,7 +115,7 @@ JFrame jFrame;
 
     @When("the user Moves a module")
     public void theUserMovesAModule()  {
-        root.getWidnow().pressTestButton();
+        root.pressTestButton();
     }
 
 

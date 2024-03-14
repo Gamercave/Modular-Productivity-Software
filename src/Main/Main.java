@@ -13,7 +13,7 @@ public class Main {
         new MPSModule(main);
 
         JFrame jFrame = new JFrame();
-        jFrame.add(main.getWidnow().getPane());
+        jFrame.add(main.getPane());
         jFrame.pack();
         jFrame.setVisible(true);
         System.out.println("Hello World");

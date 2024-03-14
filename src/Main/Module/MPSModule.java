@@ -2,47 +2,99 @@ package Main.Module;
 
 import Main.ModuleDirectory;
 
+import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
+import java.util.Arrays;
 import java.util.HashMap;
 
 public class MPSModule {
     private String id;
     private final HashMap<String, MPSModule> children;
 
-    private final ModuleUI window;
     private MPSModule parent;
     private int nestLevel;
+    private javax.swing.JPanel JPanel;
+    private JButton testButton;
 
 
     public MPSModule(String id) {// Only for use when creating root Module
-        this.id = id;
-        nestLevel = 0;
+
         children = new HashMap<>();
-        window = new ModuleUI(this);
+        this.id = id;
         this.parent = null;
+        nestLevel = 0;
+        JPanel.addMouseListener(this.getMouseListener());
+        testButton.addActionListener(this.getButtonListener());
+        setNamesOfUiItems();
         ModuleDirectory.addModule(this);
     }
 
     public MPSModule(MPSModule parent) {
 
         children = new HashMap<>();
-        window = new ModuleUI(this);
         parent.addModule(this);
         this.parent = parent;
         nestLevel = parent.getNestLevel()+1;
+        JPanel.addMouseListener(this.getMouseListener());
+        testButton.addActionListener(this.getButtonListener());
+        setNamesOfUiItems();
         ModuleDirectory.addModule(this);
     }
     public void move( MPSModule moveToo) {
         if (parent!= moveToo ) {
-            if (parent !=null)
+            if (parent != null)
             {
                 parent.removeModule(this);
             }
 
             moveToo.addModule(this);
+            return;
         }
+        return;
 
     }
+
+    public ActionListener getButtonListener(){
+        return new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                JPanel.setLocation(new Point(50,50));
+            }
+        };
+    }
+    public MouseListener getMouseListener(){
+        return new MouseListener() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+
+            }
+
+            @Override
+            public void mousePressed(MouseEvent e) {
+
+            }
+
+            @Override
+            public void mouseReleased(MouseEvent e) {
+                move(ModuleDirectory.findModule(e.getLocationOnScreen()));
+            }
+
+            @Override
+            public void mouseEntered(MouseEvent e) {
+
+            }
+
+            @Override
+            public void mouseExited(MouseEvent e) {
+
+            }
+        };
+    }
+
 
     public boolean contains(MPSModule child) {
         Boolean childInMap;
@@ -53,18 +105,37 @@ public class MPSModule {
             childInMap = false;
         }
 
-        childInWindow = window.Contains(child.getWidnow());
+        childInWindow = Arrays.stream(JPanel.getComponents()).toList().contains(child.getPane());
         return childInWindow && childInMap;
     }
 
+    public Container getPane() {
+        return JPanel;
+    }
 
+    private void setNamesOfUiItems() {
+        int i = 0;
+        for (Component c: JPanel.getComponents())
+        {
+            if (c.getName() == null)
+            {
+                c.setName(c.getClass()+ Integer.toString(i));
+            }
+        }
+
+    }
 
     private void addModule (MPSModule child) {
         String childID = getChildID();
         child.setID(childID);
         child.setNestLevel(nestLevel++);
         children.put(childID, child);
-        window.add(child.getWidnow());
+        try {
+            JPanel.add(child.getPane());
+        }
+       catch (Exception e){
+            e.toString();
+       }
         this.validate();
 
     }
@@ -72,16 +143,21 @@ public class MPSModule {
 
     private void removeModule(MPSModule child) {
         children.remove(child.getID());
-        window.remove(child.getWidnow());
+        JPanel.remove(child.getPane());
         this.validate();
 
     }
 
     public boolean isInBounds(Point point) {
-        return window.isInBounds(point);
+        Rectangle rectangle = JPanel.getBounds();
+        rectangle.setLocation(JPanel.getLocationOnScreen());
+        return rectangle.contains(point);
+
+
+        //return pane.getBounds().contains(point);
     }
     private void validate() {
-        window.validate();
+        JPanel.validate();
     }
 
 
@@ -89,11 +165,6 @@ public class MPSModule {
         nestLevel = i;
     }
 
-
-
-    public ModuleUI getWidnow() {
-        return window;
-    }
 
     private String getChildID() {
         String childID = id + "," + (children.size() + 1);
@@ -114,7 +185,7 @@ public class MPSModule {
 
     public Point getPosition() {
 
-        return window.getPosition();
+        return JPanel.getLocationOnScreen();
     }
 
 
@@ -130,4 +201,7 @@ public class MPSModule {
         return nestLevel;
     }
 
+    public void pressTestButton() {
+        testButton.doClick();
+    }
 }
