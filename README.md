@@ -1,14 +1,39 @@
 # Project Overview
 ## What is the Project
-The softwares main purpose is to produce a open source UI framework which allows for customisability of all elements within a given Core.Module - a module in this sence would be a functionality such as: a word processor, mp3 player etc in a widget style box that can be manipulated to: place controls and information anywhere, alter the contents of the module itself e.g Disabling word count or disabling playback bar in an MP3 player, and adjust apearence of individual information or controls in colour size etc - this will include button size, colour e.t.c. The aim being increasing Accssessability for all users. 
+The aim of this project is to produce a freely available and editable User interface framework which allows for customisability of all aspects of a Module. A module would be a functionality such as:
+
+ •	A word processor.
+
+ •	An mp3 player.
+ 
+ The following traits are examples of customisability:
+ 
+ •	Place controls and information anywhere.
+ 
+ •	Alter the contents of the module itself:
+ 
+ •	Disabling word count.
+ 
+ •	Disabling playback bar in an MP3 player.
+ 
+ •	Adjust appearance of individual information.
+ 
+ •	Change colour.
+ 
+ •	Change size etc.
+
+Ultimately, the intention for this framework is to maximise accessibility for all users.
+
+ 
 # The Report
-The report produced will explain my research and the problem space. I will then take an anylitical look into my development process reviewing decisions i have made discussing the flaws and strengths of the project, which will allow me to continue to develop post submission.
+The report produced will explain my research and the problem space. I will then take an anylitical look into my development process, reviewing decisions i have made discussing the flaws and strengths of the project, which will allow me to continue to develop post submission.
 # Project Deliverable
 The deliverable for this project comes in three parts
 - The Software
 - The Documentation
+- The Project
 ## The Software
-The software by April should contain:
+By April the should contain should contain:
 - a modularity system which allows for multiple aplications and/or utilities to be displayed on the screen at a single time
 - Customisability: Every Aspect of a given module should be customisable from its back ground colour to display shape etc.
 - A Word Processor
