@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f7fe1e3e-bfe5-4a5b-843f-a10ef07160a9" name="Changes" comment="put test back to normal so i can run it whenever">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="f7fe1e3e-bfe5-4a5b-843f-a10ef07160a9" name="Changes" comment="just a push">
+      <change beforePath="$PROJECT_DIR$/src/Main/Module/MPSModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Module/MPSModule.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +103,7 @@
       <recent name="test.java" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Feature: FindModuleAtXY">
+  <component name="RunManager" selected="Cucumber Java.Feature: MovingModules">
     <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main.Main" />
       <module name="HelloWorld" />
@@ -207,9 +207,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber Java.Feature: FindModuleAtXY" />
-        <item itemvalue="Cucumber Java.Feature: ModuleWindow" />
         <item itemvalue="Cucumber Java.Feature: MovingModules" />
+        <item itemvalue="Cucumber Java.Feature: ModuleWindow" />
+        <item itemvalue="Cucumber Java.Feature: FindModuleAtXY" />
         <item itemvalue="Cucumber Java.Feature: ModuleIDs" />
         <item itemvalue="Cucumber Java.Scenario: a window is created using UI designer" />
       </list>
@@ -243,6 +243,7 @@
       <workItem from="1710147148019" duration="2335000" />
       <workItem from="1710406802437" duration="5885000" />
       <workItem from="1710447736320" duration="620000" />
+      <workItem from="1710490500876" duration="433000" />
     </task>
     <task id="LOCAL-00001" summary="Code done yesterday mainly focussed on testing how to make unieque IDs very rough">
       <option name="closed" value="true" />
@@ -508,7 +509,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710417158352</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="just a push">
+      <option name="closed" value="true" />
+      <created>1710490720910</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1710490720910</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -526,7 +535,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Tests are now working" />
     <MESSAGE value="added a loop test for testing x number of module IDs and have started playing around with jframes etc" />
     <MESSAGE value="Jframe tests exist" />
     <MESSAGE value="Huzzah BDD solved the issue of instantiation" />
@@ -551,7 +559,8 @@
     <MESSAGE value="huzza fixed it by changing the location properly in the test" />
     <MESSAGE value="added a border" />
     <MESSAGE value="massivly increased test" />
-    <option name="LAST_COMMIT_MESSAGE" value="massivly increased test" />
+    <MESSAGE value="just a push" />
+    <option name="LAST_COMMIT_MESSAGE" value="just a push" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -566,44 +575,9 @@
           <option name="timeStamp" value="38" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Main/ModuleDirectory.java</url>
-          <line>18</line>
-          <option name="timeStamp" value="54" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Main/ModuleDirectory.java</url>
-          <line>28</line>
-          <option name="timeStamp" value="55" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Main/ModuleDirectory.java</url>
-          <line>37</line>
-          <option name="timeStamp" value="57" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Main/ModuleDirectory.java</url>
-          <line>36</line>
-          <option name="timeStamp" value="58" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/WindowSteps.java</url>
-          <line>117</line>
-          <option name="timeStamp" value="144" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/WindowSteps.java</url>
-          <line>125</line>
-          <option name="timeStamp" value="145" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Main/Module/MPSModule.java</url>
-          <line>149</line>
+          <line>146</line>
           <option name="timeStamp" value="158" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/StepDefMovingModules.java</url>
-          <line>47</line>
-          <option name="timeStamp" value="161" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

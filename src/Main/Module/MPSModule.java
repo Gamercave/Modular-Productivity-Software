@@ -45,6 +45,7 @@ public class MPSModule {
         ModuleDirectory.addModule(this);
     }
     public void move( MPSModule moveToo) {
+        // ITS CHILD CAN BE MOVED TOO MEANING HIGHER IN HEIRACHY CAN GO TO LOWER IN HEIRARCHY
         if (parent!= moveToo ) {
             if (parent != null)
             {
@@ -56,6 +57,24 @@ public class MPSModule {
         }
         return;
 
+    }
+    private void addModule (MPSModule child) {
+        String childID = getChildID();
+        child.setID(childID);
+        child.setNestLevel(nestLevel++);
+        children.put(childID, child);
+        JPanel.add(child.getPane());
+
+
+        this.validate();
+
+    }
+
+
+    private void removeModule(MPSModule child) {
+        children.remove(child.getID());
+        JPanel.remove(child.getPane());
+        this.validate();
     }
 
     public ActionListener getButtonListener(){
@@ -125,28 +144,7 @@ public class MPSModule {
 
     }
 
-    private void addModule (MPSModule child) {
-        String childID = getChildID();
-        child.setID(childID);
-        child.setNestLevel(nestLevel++);
-        children.put(childID, child);
-        try {
-            JPanel.add(child.getPane());
-        }
-       catch (Exception e){
-            e.toString();
-       }
-        this.validate();
 
-    }
-
-
-    private void removeModule(MPSModule child) {
-        children.remove(child.getID());
-        JPanel.remove(child.getPane());
-        this.validate();
-
-    }
 
     public boolean isInBounds(Point point) {
         Rectangle rectangle = JPanel.getBounds();
